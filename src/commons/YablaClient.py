@@ -39,6 +39,21 @@ def lookUpHanzi(hanziListChar: HanziListChar, hanziFreqDict: HanziFreqLookup, ra
     if "No matches found for" in response.text:
         Utils.exitWithError(f"No results for {hanziListChar.hanzi}, check {url}")
 
+    hanziChar = HanziChar.create(hanzi=hanziListChar.hanzi)
+    scoredReadings = {}
+
+    yablaWords = parseYablaResponse(response)
+    checkIfHanziIsTraditionalForm(hanziChar, hanziListChar, yablaWords)
+    wordExamples = identifyHanziAndGetWordExamples(hanziChar, hanziListChar, scoredReadings, yablaWords)
+    scoreReadings(hanziChar, scoredReadings, yablaWords)
+    findAtLeastOneExampleForEachReading(hanziChar, wordExamples)
+    fillExamplesUpWithOtherWords(hanziChar, wordExamples)
+    scrapeComponentsOfHanziCharacter(hanziChar, hanziFreqDict, hanziListChar, radicalsLookup)
+
+    return hanziChar
+
+
+def parseYablaResponse(response):
     yablaWords = []
     dom = BeautifulSoup(response.text, 'html.parser')
     for entryElem in dom.find_all(class_="entry"):  # every entry is a word (or single hanzi))
@@ -63,67 +78,14 @@ def lookUpHanzi(hanziListChar: HanziListChar, hanziFreqDict: HanziFreqLookup, ra
         yablaWord.meaning = ', '.join(meaning)
 
         yablaWords.append(yablaWord)
+    return yablaWords
 
-    hanziChar = HanziChar.create(hanzi=hanziListChar.hanzi)
 
-    # check if traditional form
-    for yablaWord in yablaWords:
-        if yablaWord.traditionalForm and yablaWord.traditionalForm == hanziListChar.hanzi:
-            hanziChar.isTrd = True
-
-    # identify hanzi
-    scoredReadings = {}
-    wordExamples = []
-    for index, yablaWord in enumerate(yablaWords):
-        if yablaWord.currentForm == hanziListChar.hanzi or yablaWord.traditionalForm == hanziListChar.hanzi:
-            hanziChar.trd = yablaWord.traditionalForm
-            hanziChar.cur = yablaWord.currentForm
-            hanziChar.mng.append(yablaWord.meaning)
-            hanziChar.addPinyin(yablaWord.pinyin)
-            scoredReadings.update({yablaWord.pinyin: 0})
-        else:
-            wordExamples.append(yablaWord)
-
-    # score readings
-    for reading in scoredReadings.keys():
-        score = 0
-        for yablaWord in yablaWords:
-            if reading in yablaWord.pinyin:
-                score += 1
-        scoredReadings[reading] = score
-
-    hanziChar.pyn.clear()
-    counter = Counter(scoredReadings)
-    for obj in counter.most_common():
-        hanziChar.addPinyin(obj[0])
-
-    # find at least one example for each reading
-    for pinyin in hanziChar.pyn:
-        for index, yablaWord in enumerate(wordExamples):
-            if pinyin in yablaWord.pinyin:
-                hanziChar.exm.append(ExampleWord.construct(cur=yablaWord.currentForm,
-                                                           trd=yablaWord.traditionalForm,
-                                                           mng=yablaWord.meaning,
-                                                           pyn=yablaWord.pinyin))
-                wordExamples.pop(index)
-                break
-
-    # fill up with other words
-    for yablaWord in wordExamples:
-        exampleWord = ExampleWord.construct(cur=yablaWord.currentForm,
-                                            trd=yablaWord.traditionalForm,
-                                            mng=yablaWord.meaning,
-                                            pyn=yablaWord.pinyin)
-        hanziChar.exm.append(exampleWord)
-        if len(hanziChar.exm) == 10:
-            break
-
-    # get radical compounds
+def scrapeComponentsOfHanziCharacter(hanziChar, hanziFreqDict, hanziListChar, radicalsLookup):
     url = f"{mdbgBaseUrl}&i={hanziListChar.hanzi}"
     response = requests.get(url, headers=headers)
     if response.status_code != 200:
         Utils.exitWithError(f"URL returned unexpected code: '{response.status_code}', need 200. URL: {url}")
-
     if "No results found" not in response.text:
         dom = BeautifulSoup(response.text, 'html.parser')
         for link in dom.find_all("a"):
@@ -134,4 +96,58 @@ def lookUpHanzi(hanziListChar: HanziListChar, hanziFreqDict: HanziFreqLookup, ra
                     meaning = radicalsLookup.getMeaning(component)
                 hanziChar.cmp.append(f"{component} ({meaning})")
 
-    return hanziChar
+
+def fillExamplesUpWithOtherWords(hanziChar, wordExamples):
+    for yablaWord in wordExamples:
+        exampleWord = ExampleWord.construct(cur=yablaWord.currentForm,
+                                            trd=yablaWord.traditionalForm,
+                                            mng=yablaWord.meaning,
+                                            pyn=yablaWord.pinyin)
+        hanziChar.exm.append(exampleWord)
+        if len(hanziChar.exm) == 10:
+            break
+
+
+def findAtLeastOneExampleForEachReading(hanziChar, wordExamples):
+    for pinyin in hanziChar.pyn:
+        for index, yablaWord in enumerate(wordExamples):
+            if pinyin in yablaWord.pinyin:
+                hanziChar.exm.append(ExampleWord.construct(cur=yablaWord.currentForm,
+                                                           trd=yablaWord.traditionalForm,
+                                                           mng=yablaWord.meaning,
+                                                           pyn=yablaWord.pinyin))
+                wordExamples.pop(index)
+                break
+
+
+def scoreReadings(hanziChar, scoredReadings, yablaWords):
+    for reading in scoredReadings.keys():
+        score = 0
+        for yablaWord in yablaWords:
+            if reading in yablaWord.pinyin:
+                score += 1
+        scoredReadings[reading] = score
+    hanziChar.pyn.clear()
+    counter = Counter(scoredReadings)
+    for obj in counter.most_common():
+        hanziChar.addPinyin(obj[0])
+
+
+def checkIfHanziIsTraditionalForm(hanziChar, hanziListChar, yablaWords):
+    for yablaWord in yablaWords:
+        if yablaWord.traditionalForm and yablaWord.traditionalForm == hanziListChar.hanzi:
+            hanziChar.isTrd = True
+
+
+def identifyHanziAndGetWordExamples(hanziChar, hanziListChar, scoredReadings, yablaWords):
+    wordExamples = []
+    for index, yablaWord in enumerate(yablaWords):
+        if yablaWord.currentForm == hanziListChar.hanzi or yablaWord.traditionalForm == hanziListChar.hanzi:
+            hanziChar.trd = yablaWord.traditionalForm
+            hanziChar.cur = yablaWord.currentForm
+            hanziChar.mng.append(yablaWord.meaning)
+            hanziChar.addPinyin(yablaWord.pinyin)
+            scoredReadings.update({yablaWord.pinyin: 0})
+        else:
+            wordExamples.append(yablaWord)
+    return wordExamples

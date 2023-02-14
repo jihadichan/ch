@@ -1,5 +1,3 @@
-from typing import List
-
 from src.commands.uberhanzi.HanziFreqLookup import HanziFreqLookup
 from src.commands.uberhanzi.PinyinLookup import PinyinLookup
 from src.commands.uberhanzi.RadicalsLookup import RadicalsLookup
@@ -16,10 +14,10 @@ def scrape(hanziFreqDict: HanziFreqLookup, pinyinLookup: PinyinLookup, radicalsL
         charList.append(HanziListChar.fromHanziList(line))
 
     for hanziListChar in charList:
-        # Utils.printInfo(f"Checking {hanziListChar.hanzi}") todo uncomment
-        YablaClient.lookUpHanzi(hanziListChar, hanziFreqDict, radicalsLookup)
+        Utils.printInfo(f"Checking {hanziListChar.hanzi}")
+        hanziChar = YablaClient.lookUpHanzi(hanziListChar, hanziFreqDict, radicalsLookup)
+        print(hanziChar)
         break
-
 
         # for each
         #   scrape the dictionary
