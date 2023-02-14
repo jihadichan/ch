@@ -52,7 +52,7 @@ def exitWithException(errorMessage: str, exception: Exception):
 
 
 if __name__ == '__main__':
-    hanziSet = createHanziSet(Path("../resources/top10k_freq_list.csv"), "Failed to load hanzi file")
+    hanziSet = createHanziSet(Path("../uberhanzi/resources/top10k_freq_list.csv"), "Failed to load hanzi file")
     kanjiSet = createKanjiSet(Path("files/all_kanji.txt"), "Failed to load freq list")
     confList = createConfList(Path("files/old_kanji_conf_list.txt"), "Failed to load conf list")
 

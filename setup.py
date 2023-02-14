@@ -9,6 +9,8 @@ setup(
         'click',
         'pygments',
         'pathlib',
-        'pydantic'
+        'pydantic',
+        'requests',
+        'beautifulsoup4'
     ]
 )
