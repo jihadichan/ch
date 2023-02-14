@@ -34,5 +34,12 @@ def radicalsList() -> Path:
 def pinyinMp3Dir() -> Path:
     path = Path("uberhanzi/pinyin")
     if not path.exists():
-        Utils.exitWithError(f"Failed to find pinyin mp3 file at: {path.absolute()}")
+        Utils.exitWithError(f"Failed to find pinyin mp3 dir at: {path.absolute()}")
+    return path
+
+
+def hanziCharJsonDir() -> Path:
+    path = Path("uberhanzi/hanzi")
+    if not path.exists():
+        Utils.exitWithError(f"Failed to find hanzi dir at: {path.absolute()}")
     return path

@@ -1,0 +1,75 @@
+{
+  "hnz": "一",
+  "isTrd": false,
+  "cmp": [],
+  "mng": [
+    "one, 1, single, a (article), as soon as, entire, whole, all, throughout, \"one\" radical in Chinese characters (Kangxi radical 1), also pr. [yao1] for greater clarity when spelling out numbers digit by digit"
+  ],
+  "pyn": [
+    "yī"
+  ],
+  "exm": [
+    {
+      "cur": "一般",
+      "trd": null,
+      "mng": "same, ordinary, so-so, common, general, generally, in general",
+      "pyn": "yī bān"
+    },
+    {
+      "cur": "一定",
+      "trd": null,
+      "mng": "surely, certainly, necessarily, fixed, a certain (extent etc), given, particular, must",
+      "pyn": "yī dìng"
+    },
+    {
+      "cur": "一下",
+      "trd": null,
+      "mng": "(used after a verb) give it a go, to do (sth for a bit to give it a try), one time, once, in a while, all of a sudden, all at once",
+      "pyn": "yī xià"
+    },
+    {
+      "cur": "一些",
+      "trd": null,
+      "mng": "some, a few, a little",
+      "pyn": "yī xiē"
+    },
+    {
+      "cur": "一次",
+      "trd": null,
+      "mng": "first, first time, once, (math.) linear (of degree one)",
+      "pyn": "yī cì"
+    },
+    {
+      "cur": "一切",
+      "trd": null,
+      "mng": "everything, every, all",
+      "pyn": "yī qiè"
+    },
+    {
+      "cur": "一直",
+      "trd": null,
+      "mng": "straight (in a straight line), continuously, always, from the beginning of ... up to ..., all along",
+      "pyn": "yī zhí"
+    },
+    {
+      "cur": "一样",
+      "trd": "一樣",
+      "mng": "same, like, equal to, the same as, just like",
+      "pyn": "yī yàng"
+    },
+    {
+      "cur": "一起",
+      "trd": null,
+      "mng": "in the same place, together, with, altogether (in total)",
+      "pyn": "yī qǐ"
+    },
+    {
+      "cur": "一度",
+      "trd": null,
+      "mng": "for a time, at one time, one time, once",
+      "pyn": "yī dù"
+    }
+  ],
+  "trd": null,
+  "cur": "一"
+}

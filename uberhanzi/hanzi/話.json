@@ -1,0 +1,82 @@
+{
+  "hnz": "話",
+  "isTrd": true,
+  "cmp": [
+    "言 (to speak/to say/talk/word)",
+    "丿 (slash)",
+    "千 (thousand, a swing)",
+    "十 (ten/10)",
+    "舌 (tongue)",
+    "口 (mouth/(a measure word))"
+  ],
+  "mng": [
+    "dialect, language, spoken words, speech, talk, words, conversation, what sb said"
+  ],
+  "pyn": [
+    "huà"
+  ],
+  "exm": [
+    {
+      "cur": "电话",
+      "trd": "電話",
+      "mng": "telephone, phone call, phone number",
+      "pyn": "diàn huà"
+    },
+    {
+      "cur": "的话",
+      "trd": "的話",
+      "mng": "if (coming after a conditional clause)",
+      "pyn": "de huà"
+    },
+    {
+      "cur": "话题",
+      "trd": "話題",
+      "mng": "subject (of a talk or conversation), topic",
+      "pyn": "huà tí"
+    },
+    {
+      "cur": "一句话",
+      "trd": "一句話",
+      "mng": "in a word, in short",
+      "pyn": "yī jù huà"
+    },
+    {
+      "cur": "打电话",
+      "trd": "打電話",
+      "mng": "to make a telephone call",
+      "pyn": "dǎ diàn huà"
+    },
+    {
+      "cur": "对话",
+      "trd": "對話",
+      "mng": "dialog",
+      "pyn": "duì huà"
+    },
+    {
+      "cur": "说话",
+      "trd": "說話",
+      "mng": "to speak, to say, to talk, to gossip, to tell stories, talk, word",
+      "pyn": "shuō huà"
+    },
+    {
+      "cur": "讲话",
+      "trd": "講話",
+      "mng": "a speech, to speak, to talk, to address",
+      "pyn": "jiǎng huà"
+    },
+    {
+      "cur": "话说",
+      "trd": "話說",
+      "mng": "It is said that ... (at the start of a narrative), to discuss, to recount",
+      "pyn": "huà shuō"
+    },
+    {
+      "cur": "空话",
+      "trd": "空話",
+      "mng": "empty talk, bunk, malicious gossip",
+      "pyn": "kōng huà"
+    }
+  ],
+  "trd": "話",
+  "cur": "话"
+}

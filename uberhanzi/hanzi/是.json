@@ -1,0 +1,78 @@
+{
+  "hnz": "是",
+  "isTrd": false,
+  "cmp": [
+    "日 (Japan/day/sun/date/day of the month)",
+    "𤴓 (Unknown)"
+  ],
+  "mng": [
+    "is, are, am, yes, to be"
+  ],
+  "pyn": [
+    "shì"
+  ],
+  "exm": [
+    {
+      "cur": "不是",
+      "trd": null,
+      "mng": "no, is not, not",
+      "pyn": "bù shì"
+    },
+    {
+      "cur": "不是",
+      "trd": null,
+      "mng": "fault, blame",
+      "pyn": "bù shi"
+    },
+    {
+      "cur": "就是",
+      "trd": null,
+      "mng": "(emphasizes that sth is precisely or exactly as stated), precisely, exactly, even, if, just like, in the same way as",
+      "pyn": "jiù shì"
+    },
+    {
+      "cur": "还是",
+      "trd": "還是",
+      "mng": "or, still, nevertheless",
+      "pyn": "hái shì"
+    },
+    {
+      "cur": "但是",
+      "trd": null,
+      "mng": "but, however",
+      "pyn": "dàn shì"
+    },
+    {
+      "cur": "是否",
+      "trd": null,
+      "mng": "whether (or not), if, is or isn't",
+      "pyn": "shì fǒu"
+    },
+    {
+      "cur": "只是",
+      "trd": null,
+      "mng": "merely, simply, only, but",
+      "pyn": "zhǐ shì"
+    },
+    {
+      "cur": "而是",
+      "trd": null,
+      "mng": "rather",
+      "pyn": "ér shì"
+    },
+    {
+      "cur": "是不是",
+      "trd": null,
+      "mng": "is or isn't, yes or no, whether or not",
+      "pyn": "shì bù shì"
+    },
+    {
+      "cur": "总是",
+      "trd": "總是",
+      "mng": "always",
+      "pyn": "zǒng shì"
+    }
+  ],
+  "trd": null,
+  "cur": "是"
+}
