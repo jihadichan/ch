@@ -1,9 +1,28 @@
 {:toc}
 
+# UberHanzi
+
+
+
+## Card format
+
+```bash
+id						 # uhz-HASHED_HANZI, e.g. uhz-c27c51f158
+hanzi					 # text, e.g. 日										
+concept					 # text, e.g. day, sun
+mnemonic 				 # text, e.g. !done<br>日 - by day...	
+playback 				 # readings for playback, e.g. にち.じつ
+frequence				 # int, e.g. 123
+data					 # base64 encoded JSON
+```
+
+
+
 # Resources
 
 - [Pinyin pronunciation](https://chinese.yabla.com/chinese-pinyin-chart.php), with mp3 files
 - [Pinyin transliteration](https://mandarintools.com/pychart.html), `jue4 => juè`
+- [Top10k hanzi](https://lingua.mtsu.edu/chinese-computing/statistics/char/list.php?Which=MO)
 
 
 

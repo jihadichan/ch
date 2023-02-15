@@ -1,7 +1,7 @@
 import click
 from click import command
 
-from src.commands.uberhanzi.functions import ScrapeHanzi, ScrapeMp3
+from src.commands.uberhanzi.functions import ScrapeHanzi, ScrapeMp3, CreateCsv
 from src.commands.uberhanzi.lookups.HanziFreqLookup import HanziFreqLookup
 from src.commands.uberhanzi.lookups.PinyinLookup import PinyinLookup
 from src.commands.uberhanzi.lookups.RadicalsLookup import RadicalsLookup
@@ -26,7 +26,7 @@ def uberhanzi(scrape_hanzi: bool, scrape_mp3: bool, create_csv: bool) -> command
         exit()
 
     if create_csv:
-
+        CreateCsv.create(hanziFreqLookup, radicalsLookup, pinyinLookup)
         exit()
 
     Utils.exitWithError("No command given. Use --help")

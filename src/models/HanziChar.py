@@ -1,11 +1,11 @@
-from typing import List, Set, OrderedDict
+from typing import List, Set, OrderedDict, Optional
 
 from pydantic import BaseModel
 
 
 class ExampleWord(BaseModel):
     cur: str
-    trd: str
+    trd: Optional[str]
     mng: str
     pyn: str
 
@@ -13,7 +13,7 @@ class ExampleWord(BaseModel):
 class HanziChar(BaseModel):
     hnz: str
     cur: str
-    trd: str
+    trd: Optional[str]
     isTrd: bool = False
     cmp: List[str] = list()
     mng: List[str] = list()
