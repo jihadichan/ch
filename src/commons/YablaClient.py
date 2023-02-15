@@ -1,4 +1,3 @@
-import json
 import re
 from collections import Counter
 from re import split
@@ -7,9 +6,8 @@ import requests
 from bs4 import BeautifulSoup
 from pydantic import BaseModel
 
-from src.commands.uberhanzi.HanziFreqLookup import HanziFreqLookup
-from src.commands.uberhanzi.PinyinLookup import PinyinLookup
-from src.commands.uberhanzi.RadicalsLookup import RadicalsLookup
+from src.commands.uberhanzi.lookups.HanziFreqLookup import HanziFreqLookup
+from src.commands.uberhanzi.lookups.RadicalsLookup import RadicalsLookup
 from src.models.HanziChar import HanziChar, ExampleWord
 from src.models.HanziListChar import HanziListChar
 from src.utils import Utils

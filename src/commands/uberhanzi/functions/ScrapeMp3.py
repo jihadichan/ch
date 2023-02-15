@@ -1,12 +1,10 @@
 import glob
 import re
-import shutil
-
 from pathlib import Path
 
 import requests
 
-from src.commands.uberhanzi.PinyinLookup import PinyinLookup, PinyinType
+from src.commands.uberhanzi.lookups.PinyinLookup import PinyinLookup, PinyinType
 from src.commons import FilePaths
 from src.utils import Utils
 

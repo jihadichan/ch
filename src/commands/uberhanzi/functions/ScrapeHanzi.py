@@ -1,18 +1,16 @@
 import glob
 import json
 import re
-
 from pathlib import Path
 
-from src.commands.uberhanzi.HanziFreqLookup import HanziFreqLookup
-from src.commands.uberhanzi.PinyinLookup import PinyinLookup
-from src.commands.uberhanzi.RadicalsLookup import RadicalsLookup
+from src.commands.uberhanzi.lookups.HanziFreqLookup import HanziFreqLookup
+from src.commands.uberhanzi.lookups.RadicalsLookup import RadicalsLookup
 from src.commons import FilePaths, YablaClient
 from src.models.HanziListChar import HanziListChar
 from src.utils import FileUtils, Utils
 
 
-def scrape(hanziFreqDict: HanziFreqLookup, pinyinLookup: PinyinLookup, radicalsLookup: RadicalsLookup):
+def scrape(hanziFreqDict: HanziFreqLookup, radicalsLookup: RadicalsLookup):
     hanziCharDirPath = FilePaths.hanziCharJsonDir()
 
     knownHanzi = set()

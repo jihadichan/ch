@@ -3,7 +3,7 @@
 # Resources
 
 - [Pinyin pronunciation](https://chinese.yabla.com/chinese-pinyin-chart.php), with mp3 files
-- [Pinyin transliteration](https://mandarintools.com/pychart.html), `jue4:juè`
+- [Pinyin transliteration](https://mandarintools.com/pychart.html), `jue4 => juè`
 
 
 
@@ -47,6 +47,8 @@
 
 - [x] Create CLI in Python, not Java (because types)
 
+- [ ] Confs
+
 - [ ] Create similar output to UberKanji
 
 - [ ]  ~~Add "character decomposition" as iframe (works), no need for~~ Just iframe the whole page like jisho
@@ -66,6 +68,8 @@
   ```bash
   国                           # kanji (first column must be ID)
   3                           # ID (should be unique string)																
+  # concept?!					# better check export again 
+  # mnemonic?!
   こく.くに					  # reading for playback
   3							# frequency, make 99999 if not known
   624							# RTK index, remove
