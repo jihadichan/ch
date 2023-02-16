@@ -43,3 +43,10 @@ def hanziCharJsonDir() -> Path:
     if not path.exists():
         Utils.exitWithError(f"Failed to find hanzi dir at: {path.absolute()}")
     return path
+
+
+def outputDir() -> Path:
+    path = Path("output")
+    if not path.exists():
+        Utils.exitWithError(f"Failed to find output dir at: {path.absolute()}")
+    return path

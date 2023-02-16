@@ -12,7 +12,8 @@ hanzi					 # text, e.g. 日
 concept					 # text, e.g. day, sun
 mnemonic 				 # text, e.g. !done<br>日 - by day...	
 playback 				 # readings for playback, e.g. にち.じつ
-frequence				 # int, e.g. 123
+frequency				 # int, e.g. 123
+searchkey				 # ｘ日
 data					 # base64 encoded JSON
 ```
 

@@ -45,7 +45,9 @@ def create(hanziFreqDict: HanziFreqLookup, radicalsLookup: RadicalsLookup, pinyi
         rows += "\t".join(row)
         rows += "\n"
 
-    print(rows)  # todo save to file
+    outputFile = FilePaths.outputDir().joinpath('uberhanzi.csv')
+    FileUtils.writeToFile(outputFile, rows, f"Failed to write {outputFile}")
+    Utils.printInfo(f"Wrote to {outputFile.absolute()}")
 
 
 def getID(hanziListChar: HanziListChar) -> str:

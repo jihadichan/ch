@@ -87,7 +87,7 @@ function renderFonts(amount, breakAfter) {
 function renderFontSelection() {
     var ids = getRandomFontIds(amountOfFontsToShow);
     var hanzi = "";
-    if (data.trd) {
+    if (data.isTrd) {
         hanzi += data.cur+"<br><span class='kanji-highlight'>"+data.trd+"</span>"
     } else {
         hanzi += "<span>"+data.cur+"</span>"

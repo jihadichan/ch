@@ -85,22 +85,22 @@
     </div>
 </div>
 
-<div id="kanji">{{kanji}}</div>
+<div id="hanzi">{{hanzi}}</div>
 <div id="data">{{static data}}</div>
 <div id="play-sound">{{play sound}}</div>
-<script src="uberhanzi/statics/confs.js" type="application/javascript"></script>
-<script src="uberhanzi/statics/jquery-3.4.1.min.js" type="application/javascript"></script>
-<script src="uberhanzi/statics/backpage.js" type="application/javascript"></script>
-<script src="uberhanzi/statics/datatables.min.js" type="application/javascript"></script>
-<script src="uberhanzi/statics/jquery.modal.min.js" type="application/javascript"></script>
+<div id="frequency">{{frequency}}</div>
+<script src="uberhanzi/statics/confs.js" type="application/javascript" crossorigin="anonymous"></script>
+<script src="uberhanzi/statics/jquery-3.4.1.min.js" type="application/javascript" crossorigin="anonymous"></script>
+<script src="uberhanzi/statics/backpage.js" type="application/javascript" crossorigin="anonymous"></script>
+<script src="uberhanzi/statics/datatables.min.js" type="application/javascript" crossorigin="anonymous"></script>
+<script src="uberhanzi/statics/jquery.modal.min.js" type="application/javascript" crossorigin="anonymous"></script>
 <div id="modal" class="modal">
     <table class="modal-table">
         <tr>
             <td id="modal-result"></td>
         </tr>
         <tr>
-            <td class="td-textarea" style="padding: 1px"><textarea id="word-area" onclick="selectOnClick(this)"
-                                                                   onkeyup="updateRuby()"></textarea></td>
+            <td class="td-textarea" style="padding: 1px"><textarea id="word-area" onclick="selectOnClick(this)" onkeyup="updateRuby()"></textarea></td>
         </tr>
         <tr>
             <td id="modal-meanings"></td>

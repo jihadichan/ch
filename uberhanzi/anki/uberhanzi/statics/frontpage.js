@@ -1,20 +1,12 @@
-var data;
 var debugField = $('#debug');
 window.onerror = function (message, source, lineno, colno, error) {
-    debugField.append("<br>Message: " + message + " - Source: " + source + " - LineNo: " + lineno + " - ColNo: " + colno + " - Error: " + error);
+    debugField.append("<br>window.onerror: " + message + " - Source: " + source + " - LineNo: " + lineno + " - ColNo: " + colno + " - Error: " + error);
 };
-try {
-    data = JSON.parse(decodeURIComponent($('#data').html().replace(/\+/g, ' ')));
-} catch (e) {
-    data = {};
-    debugField.append("JSON parse error. " + e.message);
-}
 var mnemonicField = $('#mnemonic');
 var playSoundField = $('#play-sound');
 var confusionQuestion = $('#confusion-question');
-var kanjiField = $('#kanji');
+var hanziField = $('#hanzi');
 var fonts = [1]; // , 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
-var readings = playSoundField.text().trim().split(".");
 var sections = [];
 var compoundReading = "";
 var countFnKJ = 0;
@@ -32,7 +24,7 @@ var lapsStore = [];
 var lapNr = 0;
 var currentRtId = 1000;
 var lastRtId = 999;
-var confusions = extractConfusions();
+var confusions = [];
 
 
 function debug(stage) {
@@ -163,7 +155,7 @@ function getMnemonicsSolution() {
 function createConfusionStep() {
     var html = "<div class='challenge'>";
     for (var kanji of confusions) {
-        if (kanji !== kanjiField.text()) {
+        if (kanji !== hanziField.text()) {
             html += kanji + "　";
         }
     }
@@ -342,7 +334,7 @@ function getRandomFontIds(n) {
 }
 
 function renderFonts(amount, breakAfter) {
-    var kanji = kanjiField.text();
+    var kanji = hanziField.text();
     var container = '<div class="fonts">';
     var count = 1;
     $.each(getRandomFontIds(amount), function (i, value) {
@@ -359,7 +351,7 @@ function renderFonts(amount, breakAfter) {
 function renderConfusions() {
     var line = "";
     for (var kanji of confusions) {
-        if (kanjiField.text() !== kanji) {
+        if (hanziField.text() !== kanji) {
             line += kanji + " ";
         }
     }
@@ -369,14 +361,15 @@ function renderConfusions() {
 
 function extractConfusions() {
     try {
-        var kanji = kanjiField.text().trim().codePointAt(0).toString(16); // as unicode
+        var kanji = hanziField.text().trim().codePointAt(0).toString(16); // as unicode
         if (confMap[kanji]) {
-            return confMap[kanji].confs
+            confusions = confMap[kanji].confs;
+            return;
         }
     } catch (e) {
         debugField.append(e);
     }
-    return [];
+    confusions = []
 }
 
 function renderConfusionSolution() {
@@ -390,7 +383,6 @@ function getConfusionHtml() {
     html += "<table>";
     for (var kanji of confusions) {
         var kanjiData = confMap[kanji.trim().codePointAt(0).toString(16)];
-        console.log(kanjiData)
         html += "" +
             "<tr>" +
             "   <th>" +
@@ -417,7 +409,7 @@ function getConfusionHtmlShort() {
     for (var kanji of confusions) {
         var kanjiAsUnicode = kanji.trim().codePointAt(0).toString(16)
         var kanjiData = confMap[kanjiAsUnicode];
-        if (kanji !== kanjiField.text()) {
+        if (kanji !== hanziField.text()) {
             html += kanjiData.meta + "<br>";
         }
     }
@@ -560,11 +552,10 @@ function getRubyElements(section) {
 
 
 function getReadingsFromSection(section) {
-    var regex = /\((\W{1,5}),/;
+    var regex = /\((.{1,5}),/;
 
     section = section.replace(/<br\/?>/g, "\n");
     section = cleanFromCommentedOutRubies(section);
-
     var match = regex.exec(section);
     var readings = [];
     while (match != null) {
@@ -593,8 +584,8 @@ function getReadingsFromPlaySoundInSection(playSoundReadings, sectionReadings) {
     var compoundReading = [];
     $.each(playSoundReadings, function (i1, playSoundReading) {
         $.each(sectionReadings, function (i2, sectionReading) {
-            if (toHiragana(playSoundReading) === toHiragana(sectionReading)) {
-                compoundReading.push(toHiragana(playSoundReading));
+            if (toAsciiPinyin(playSoundReading) === toAsciiPinyin(sectionReading)) {
+                compoundReading.push(toAsciiPinyin(playSoundReading));
             }
         });
     });
@@ -604,16 +595,12 @@ function getReadingsFromPlaySoundInSection(playSoundReadings, sectionReadings) {
 
 var KATAKANA_HIRAGANA_SHIFT = "\u3041".charCodeAt(0) - "\u30a1".charCodeAt(0);
 
-function toHiragana(str) {
-    var result = "";
-    $.each(str.split(''), function (index, value) {
-        if (value > "\u30a0" && value < "\u30f7") {
-            result += String.fromCharCode(value.charCodeAt(0) + KATAKANA_HIRAGANA_SHIFT);
-        } else {
-            result += value;
-        }
-    });
-    return result;
+function toAsciiPinyin(str) {
+    var ascii = pinyinDict[str.trim()];
+    if (ascii) {
+        return ascii
+    }
+    return str
 }
 
 
@@ -718,7 +705,8 @@ function addResetButtonClickEvent() {
 // addStopWatchClickEvents();
 addShowWords();
 renderFonts(1, 5);
-renderConfusions();
+setTimeout(extractConfusions, 100);
+setTimeout(renderConfusions, 200);
 printExtractRuby(false);
 toggleFrontPageWordsSection();
 addResetButtonClickEvent();
