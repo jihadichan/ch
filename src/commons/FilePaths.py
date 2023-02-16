@@ -32,7 +32,7 @@ def radicalsList() -> Path:
 
 
 def pinyinMp3Dir() -> Path:
-    path = Path("uberhanzi/pinyin")
+    path = Path("uberhanzi/anki/uberhanzi/pinyin")
     if not path.exists():
         Utils.exitWithError(f"Failed to find pinyin mp3 dir at: {path.absolute()}")
     return path

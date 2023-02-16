@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+
+    </style>
+</head>
+<body>
+
+<!-------------------------------------------------->
+<!-------------- BACK TEMPLATE START --------------->
+<!-------------------------------------------------->
+<link rel="stylesheet" type="text/css" href="uberhanzi/statics/datatables.min.css">
+<link rel="stylesheet" type="text/css" href="uberhanzi/statics/style.css">
+<div id="debug"></div>
+<div class="wrapper">
+    <div class="layout">
+        <table class="content-table">
+            <tr>
+                <td id="side-fonts" class="font-cell">
+
+                </td>
+                <td>
+                    <table class="manual-edits">
+                        <tr>
+                            <td class="manual-edits-key">Concept</td>
+                            <td>big or very</td>
+                        </tr>
+<!--                        <tr>-->
+<!--                            <td class="manual-edits-key">Meanings</td>-->
+<!--                            <td id="meanings"></td>-->
+<!--                        </tr>-->
+                        <tr>
+                            <td class="manual-edits-key" onclick="toggleFurigana()">
+                                Mnemonic
+                                <div class="toggle-furigana">Toggle</div>
+                            </td>
+                            <td id="manual-edits-mnemonic">
+                                persons say stuff in a meeting !done !new [海豚]<br><br>かい - kai at the meeting<br>か.うん - kai at the meeting<br>え.あ - e und a machen ein langes mnemonic und something something something<br>---<br><ruby>的話<rt>de huà</rt></ruby> (huà, if (coming after a conditional clause))<br>#<ruby>会釈<rt>えしゃく</rt></ruby> (エ, slight bow)<br>---<br># <ruby>会う<rt>あう</rt></ruby> (あ, to meet) new people <br>---<br><ruby>子会社<rt>こがいしゃ</rt></ruby> (がい, subsidiary (company))
+                            </td>
+                        </tr>
+                        <tr>
+                            <td onclick="playCompoundReading()">Play &#9658;</td>
+                            <td>
+                                de4.di4.di2
+                            </td>
+                        </tr>
+                        <tr class="no-border">
+                            <td colspan="2">
+                                <table class="readings-overview">
+                                    <tr>
+                                        <td id="most-common-readings" valign="top" class="readings-table"></td>
+                                        <td id="scored-readings" valign="top" class="readings-table"></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr class="no-border">
+                            <td colspan="2">
+                                <div class="modal-buttons">
+                                    <button class="button" onclick="renderMetaData()">MetaData</button>
+                                    <button class="button" id="wordExamples" onclick="renderWordTable()">Word Examples</button>
+                                    <button class="button" onclick="renderMdbg()">MDBG</button>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td class="font-cell"></td>
+                <td colspan="2" id="rendered-content"></td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<div id="hanzi">话</div>
+<div id="data">ewogICJobnoiOiAi6KmxIiwKICAiaXNUcmQiOiB0cnVlLAogICJjbXAiOiBbCiAgICAi6KiAICh0byBzcGVhay90byBzYXkvdGFsay93b3JkKSIsCiAgICAi5Li/IChzbGFzaCkiLAogICAgIuWNgyAodGhvdXNhbmQsIGEgc3dpbmcpIiwKICAgICLljYEgKHRlbi8xMCkiLAogICAgIuiIjCAodG9uZ3VlKSIsCiAgICAi5Y+jIChtb3V0aC8oYSBtZWFzdXJlIHdvcmQpKSIKICBdLAogICJtbmciOiBbCiAgICAiZGlhbGVjdCwgbGFuZ3VhZ2UsIHNwb2tlbiB3b3Jkcywgc3BlZWNoLCB0YWxrLCB3b3JkcywgY29udmVyc2F0aW9uLCB3aGF0IHNiIHNhaWQiCiAgXSwKICAicHluIjogWwogICAgImh1w6AiCiAgXSwKICAiZXhtIjogWwogICAgewogICAgICAiY3VyIjogIueUteivnSIsCiAgICAgICJ0cmQiOiAi6Zu76KmxIiwKICAgICAgIm1uZyI6ICJ0ZWxlcGhvbmUsIHBob25lIGNhbGwsIHBob25lIG51bWJlciIsCiAgICAgICJweW4iOiAiZGnDoG4gaHXDoCIKICAgIH0sCiAgICB7CiAgICAgICJjdXIiOiAi55qE6K+dIiwKICAgICAgInRyZCI6ICLnmoToqbEiLAogICAgICAibW5nIjogImlmIChjb21pbmcgYWZ0ZXIgYSBjb25kaXRpb25hbCBjbGF1c2UpIiwKICAgICAgInB5biI6ICJkZSBodcOgIgogICAgfSwKICAgIHsKICAgICAgImN1ciI6ICLor53popgiLAogICAgICAidHJkIjogIuipsemhjCIsCiAgICAgICJtbmciOiAic3ViamVjdCAob2YgYSB0YWxrIG9yIGNvbnZlcnNhdGlvbiksIHRvcGljIiwKICAgICAgInB5biI6ICJodcOgIHTDrSIKICAgIH0sCiAgICB7CiAgICAgICJjdXIiOiAi5LiA5Y+l6K+dIiwKICAgICAgInRyZCI6ICLkuIDlj6XoqbEiLAogICAgICAibW5nIjogImluIGEgd29yZCwgaW4gc2hvcnQiLAogICAgICAicHluIjogInnEqyBqw7kgaHXDoCIKICAgIH0sCiAgICB7CiAgICAgICJjdXIiOiAi5omT55S16K+dIiwKICAgICAgInRyZCI6ICLmiZPpm7voqbEiLAogICAgICAibW5nIjogInRvIG1ha2UgYSB0ZWxlcGhvbmUgY2FsbCIsCiAgICAgICJweW4iOiAiZMeOIGRpw6BuIGh1w6AiCiAgICB9LAogICAgewogICAgICAiY3VyIjogIuWvueivnSIsCiAgICAgICJ0cmQiOiAi5bCN6KmxIiwKICAgICAgIm1uZyI6ICJkaWFsb2ciLAogICAgICAicHluIjogImR1w6wgaHXDoCIKICAgIH0sCiAgICB7CiAgICAgICJjdXIiOiAi6K+06K+dIiwKICAgICAgInRyZCI6ICLoqqroqbEiLAogICAgICAibW5nIjogInRvIHNwZWFrLCB0byBzYXksIHRvIHRhbGssIHRvIGdvc3NpcCwgdG8gdGVsbCBzdG9yaWVzLCB0YWxrLCB3b3JkIiwKICAgICAgInB5biI6ICJzaHXFjSBodcOgIgogICAgfSwKICAgIHsKICAgICAgImN1ciI6ICLorrLor50iLAogICAgICAidHJkIjogIuism+ipsSIsCiAgICAgICJtbmciOiAiYSBzcGVlY2gsIHRvIHNwZWFrLCB0byB0YWxrLCB0byBhZGRyZXNzIiwKICAgICAgInB5biI6ICJqaceObmcgaHXDoCIKICAgIH0sCiAgICB7CiAgICAgICJjdXIiOiAi6K+d6K+0IiwKICAgICAgInRyZCI6ICLoqbHoqqoiLAogICAgICAibW5nIjogIkl0IGlzIHNhaWQgdGhhdCAuLi4gKGF0IHRoZSBzdGFydCBvZiBhIG5hcnJhdGl2ZSksIHRvIGRpc2N1c3MsIHRvIHJlY291bnQiLAogICAgICAicHluIjogImh1w6Agc2h1xY0iCiAgICB9LAogICAgewogICAgICAiY3VyIjogIuepuuivnSIsCiAgICAgICJ0cmQiOiAi56m66KmxIiwKICAgICAgIm1uZyI6ICJlbXB0eSB0YWxrLCBidW5rLCBtYWxpY2lvdXMgZ29zc2lwIiwKICAgICAgInB5biI6ICJrxY1uZyBodcOgIgogICAgfQogIF0sCiAgInRyZCI6ICLoqbEiLAogICJjdXIiOiAi6K+dIgp9</div>
+<div id="play-sound">de4.di4.di2</div>
+<div id="frequency">123</div>
+<script src="uberhanzi/statics/confs.js" type="application/javascript"></script>
+<script src="uberhanzi/statics/jquery-3.4.1.min.js" type="application/javascript"></script>
+<script src="uberhanzi/statics/backpage.js" type="application/javascript" charset="UTF-8"></script>
+<script src="uberhanzi/statics/datatables.min.js" type="application/javascript"></script>
+<script src="uberhanzi/statics/jquery.modal.min.js" type="application/javascript"></script>
+<div id="modal" class="modal">
+    <table class="modal-table">
+        <tr><td id="modal-result"></td></tr>
+        <tr><td class="td-textarea" style="padding: 1px"><textarea id="word-area" onclick="selectOnClick(this)" onkeyup="updateRuby()"></textarea></td></tr>
+        <tr><td id="modal-meanings"></td></tr>
+    </table>
+</div>
+<!-------------------------------------------------->
+<!-------------- BACK TEMPLATE END ----------------->
+<!-------------------------------------------------->
+</body>
+</html>

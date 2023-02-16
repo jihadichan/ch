@@ -39,6 +39,7 @@ def create(hanziFreqDict: HanziFreqLookup, radicalsLookup: RadicalsLookup, pinyi
             "",                                                     # mnemonic
             getPinyin(hanziChar, pinyinLookup),                     # playback
             str(hanziFreqDict.getFreq(hanziListChar.hanzi)),        # frequency
+            f"ｘ{hanziListChar.hanzi}",                             # search field
             str(base64.b64encode(jsonString.encode()).decode())     # json data
         ]
         rows += "\t".join(row)
