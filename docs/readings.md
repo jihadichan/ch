@@ -299,7 +299,7 @@ Must sound similar to https://chinese.yabla.com/chinese-pinyin-chart.php
 | shei   |      |
 | shen   |      |
 | sheng  |      |
-| shi    |      |
+| shi    | shit |
 | shou   |      |
 | shu    |      |
 | shua   |      |
@@ -365,7 +365,7 @@ Must sound similar to https://chinese.yabla.com/chinese-pinyin-chart.php
 | yang   |      |
 | yao    |      |
 | ye     |      |
-| yi     |      |
+| yi     | idiot |
 | yin    |      |
 | ying   |      |
 | yong   |      |

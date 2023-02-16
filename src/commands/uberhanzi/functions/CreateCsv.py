@@ -30,7 +30,11 @@ def create(hanziFreqDict: HanziFreqLookup, radicalsLookup: RadicalsLookup, pinyi
     rows = ""
     for hanziListChar in characters:
         jsonString = loadHanziCharAsJsonString(hanziListChar)
-        hanziChar = HanziChar.parse_obj(json.loads(jsonString))
+        try:
+            hanziChar = HanziChar.parse_obj(json.loads(jsonString))
+        except (Exception,):
+            Utils.printInfo(f"Failed to map JSON for '{hanziListChar.hanzi}'. Probably insufficient data, see https://chinese.yabla.com/chinese-english-pinyin-dictionary.php?define={hanziListChar.hanzi}")
+            continue
 
         row = [
             getID(hanziListChar),                                   # ID
@@ -62,5 +66,7 @@ def loadHanziCharAsJsonString(hanziListChar: HanziListChar) -> str:
 def getPinyin(hanziChar: HanziChar, pinyinLookup: PinyinLookup) -> str:
     playback = []
     for pinyin in hanziChar.pyn:
-        playback.append(pinyinLookup.get(pinyin).ascii)
+        pyn = pinyinLookup.get(pinyin, hanziChar)
+        if pyn:
+            playback.append(pyn.ascii)
     return ".".join(playback)

@@ -1,9 +1,10 @@
 from re import split
-from typing import Dict
+from typing import Dict, Optional
 
 from pydantic import BaseModel
 
 from src.commons import FilePaths
+from src.models.HanziChar import HanziChar
 from src.utils import FileUtils, Utils
 
 
@@ -39,13 +40,13 @@ class PinyinLookup(BaseModel):
 
         return pinyinDict
 
-    def get(self, pinyin: str) -> Pinyin:
+    def get(self, pinyin: str, hanziChar: HanziChar) -> Optional[Pinyin]:
         pinyin = pinyin.strip().lower()
         if len(self.pinyinDict) == 0:
-            Utils.exitWithError("HanziFreqDict is empty. Did you use create()?")
+            Utils.exitWithError("PinyinLookup is empty. Did you use create()?")
 
         pinyinObj = self.pinyinDict.get(pinyin)
         if not pinyinObj:
-            Utils.exitWithError(f"Unknown pinyin, no entry for: '{pinyin}'")
+            return None
 
         return pinyinObj
