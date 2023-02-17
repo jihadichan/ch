@@ -18,13 +18,13 @@ Must sound similar to https://chinese.yabla.com/chinese-pinyin-chart.php
 | ben    | Ben |
 | beng   | banger |
 | bi     | bi-sexual |
-| bian   | bien (Spanish) |
+| bian   | bien (good, Spanish) |
 | biao   |      |
 | bie    |      |
 | bin    |      |
 | bing   |      |
 | bo     |      |
-| bu     |      |
+| bu     | books |
 | ca     |      |
 | cai    |      |
 | can    |      |
@@ -271,7 +271,7 @@ Must sound similar to https://chinese.yabla.com/chinese-pinyin-chart.php
 | rang   |      |
 | rao    |      |
 | re     |      |
-| ren    |      |
+| ren    | rennen |
 | reng   |      |
 | ri     |      |
 | rong   |      |
@@ -344,7 +344,7 @@ Must sound similar to https://chinese.yabla.com/chinese-pinyin-chart.php
 | wei    |      |
 | wen    |      |
 | weng   |      |
-| wo     |      |
+| wo     | war (English) |
 | wu     |      |
 | xi     |      |
 | xia    |      |
@@ -369,13 +369,13 @@ Must sound similar to https://chinese.yabla.com/chinese-pinyin-chart.php
 | yin    |      |
 | ying   |      |
 | yong   |      |
-| you    |      |
+| you    | yoghurt |
 | yu     |      |
 | yuan   |      |
 | yue    |      |
 | yun    |      |
 | za     |      |
-| zai    |      |
+| zai    | seit |
 | zan    |      |
 | zang   |      |
 | zao    |      |
@@ -388,7 +388,7 @@ Must sound similar to https://chinese.yabla.com/chinese-pinyin-chart.php
 | zhan   |      |
 | zhang  |      |
 | zhao   |      |
-| zhe    |      |
+| zhe    | Django Unchained |
 | zhei   |      |
 | zhen   |      |
 | zheng  |      |

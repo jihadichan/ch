@@ -59,19 +59,8 @@
                             <td colspan="2">
                                 <div class="modal-buttons">
                                     <button class="button" onclick="renderMetaData()">MetaData</button>
-                                    <button class="button" onclick="renderFonts(1, 5)">Fonts</button>
-                                    <button class="button" onclick="renderMdbg()">Jisho</button>
-                                    <br>
-                                    <button class="button" id="wordExamples" onclick="renderWordTable('wordExamples')">
-                                        Word Examples
-                                    </button>
-                                    <button class="button" id="unclassifiedReadings"
-                                            onclick="renderWordTable('unclassifiedReadings')">
-                                        Unknown Readings
-                                    </button>
-                                    <button class="button" id="otherForms" onclick="renderWordTable('otherForms')">Other
-                                        Forms
-                                    </button>
+                                    <button class="button" id="wordExamples" onclick="renderWordTable()">Word Examples</button>
+                                    <button class="button" onclick="renderMdbg()">MDBG</button>
                                 </div>
                             </td>
                         </tr>
@@ -89,11 +78,11 @@
 <div id="data">{{static data}}</div>
 <div id="play-sound">{{play sound}}</div>
 <div id="frequency">{{frequency}}</div>
-<script src="uberhanzi/statics/confs.js" type="application/javascript" crossorigin="anonymous"></script>
-<script src="uberhanzi/statics/jquery-3.4.1.min.js" type="application/javascript" crossorigin="anonymous"></script>
-<script src="uberhanzi/statics/backpage.js" type="application/javascript" crossorigin="anonymous"></script>
-<script src="uberhanzi/statics/datatables.min.js" type="application/javascript" crossorigin="anonymous"></script>
-<script src="uberhanzi/statics/jquery.modal.min.js" type="application/javascript" crossorigin="anonymous"></script>
+<script src="uberhanzi/statics/confs.js" type="application/javascript"></script>
+<script src="uberhanzi/statics/jquery-3.4.1.min.js" type="application/javascript"></script>
+<script src="uberhanzi/statics/backpage.js" type="application/javascript"></script>
+<script src="uberhanzi/statics/datatables.min.js" type="application/javascript"></script>
+<script src="uberhanzi/statics/jquery.modal.min.js" type="application/javascript"></script>
 <div id="modal" class="modal">
     <table class="modal-table">
         <tr>
