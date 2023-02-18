@@ -78,25 +78,3 @@ data					 # base64 encoded JSON
 - Technically it should be possible to morph that KanjiDict into a Hanzi dict. 
 
 
-
-# UberHanzi
-
-- [ ] No reading mnemonic shown
-
-- [ ] 国 | add single char words + 20 examples? See [国](https://chinese.yabla.com/chinese-english-pinyin-dictionary.php?define=%E5%9B%BD)
-
-- [ ] Add template to mnemonics field (with `<br>` as newlines)
-
-  ```bash
-  
-  国 - 
-  guó - 									 # main reading
-  
-  ---
-  <ruby>国</ruby> (guó, nation, country)	# first word with main reading
-  ```
-
-  Use traditional form in word if hanzi is trad.
-
-
-
