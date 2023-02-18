@@ -1,27 +1,17 @@
 import base64
-import glob
 import hashlib
 import json
-import re
-from pathlib import Path
+from re import split
 
 from src.commands.uberhanzi.lookups.HanziFreqLookup import HanziFreqLookup
 from src.commands.uberhanzi.lookups.PinyinLookup import PinyinLookup
-from src.commands.uberhanzi.lookups.RadicalsLookup import RadicalsLookup
-from src.commons import FilePaths, YablaClient
+from src.commons import FilePaths
 from src.models.HanziChar import HanziChar
 from src.models.HanziListChar import HanziListChar
 from src.utils import FileUtils, Utils
 
 
-def create(hanziFreqDict: HanziFreqLookup, radicalsLookup: RadicalsLookup, pinyinLookup: PinyinLookup):
-
-    # for key, hanziListChar in hanziFreqDict.freqDict.items():
-    #     for reading in hanziListChar.readings:
-    #         if not re.search("\\d", reading) and reading != "":
-    #             print(f"{hanziListChar.freq}:{reading}")
-    # exit()
-
+def create(hanziFreqDict: HanziFreqLookup, pinyinLookup: PinyinLookup):
     lines = FileUtils.loadFileAsList(FilePaths.hanziList(), "Failed to load hanzi list")
     characters = []
     for line in lines:
@@ -37,14 +27,14 @@ def create(hanziFreqDict: HanziFreqLookup, radicalsLookup: RadicalsLookup, pinyi
             continue
 
         row = [
-            getID(hanziListChar),                                   # ID
-            hanziListChar.hanzi,                                    # hanzi
-            "",                                                     # concept
-            "",                                                     # mnemonic
-            getPinyin(hanziChar, pinyinLookup),                     # playback
-            str(hanziFreqDict.getFreq(hanziListChar.hanzi)),        # frequency
-            f"ｘ{hanziListChar.hanzi}",                             # search field
-            str(base64.b64encode(jsonString.encode()).decode())     # json data
+            getID(hanziListChar),                                # ID
+            hanziListChar.hanzi,                                 # hanzi
+            createConcept(hanziChar),                            # concept
+            createMnemonics(hanziListChar, hanziChar),           # mnemonic
+            getPinyin(hanziChar, pinyinLookup),                  # playback
+            str(hanziFreqDict.getFreq(hanziListChar.hanzi)),     # frequency
+            f"ｘ{hanziListChar.hanzi}",                          # search field
+            str(base64.b64encode(jsonString.encode()).decode())  # json data
         ]
         rows += "\t".join(row)
         rows += "\n"
@@ -70,3 +60,44 @@ def getPinyin(hanziChar: HanziChar, pinyinLookup: PinyinLookup) -> str:
         if pyn:
             playback.append(pyn.ascii)
     return ".".join(playback)
+
+
+def createMnemonics(hanziListChar: HanziListChar, hanziChar: HanziChar):
+    pyn = hanziChar.pyn[0]
+
+    html = "<br>"
+    html += f"{hanziListChar.hanzi} - <br>"
+    html += f"{pyn} - <br>"
+    html += f"<br><br>"
+    html += f"---<br>"
+
+    exm = hanziChar.exm[0]
+    for candidate in hanziChar.exm:
+        if len(candidate.cur) > 1 and pyn in candidate.pyn:
+            exm = candidate
+            break
+
+    if hanziChar.isTrd:
+        html += f"<ruby>{exm.trd}<rt>{exm.pyn}</rt></ruby> ({pyn}, trdFrm of {exm.cur}, {exm.mng})"
+    else:
+        html += f"<ruby>{exm.cur}<rt>{exm.pyn}</rt></ruby> ({pyn}, {exm.mng})"
+
+    return html
+
+
+def createConcept(hanziChar: HanziChar):
+    meanings = split(",", hanziChar.mng[0])
+    main = meanings.pop(0).strip()
+    sliced = meanings[0:3]
+    for index, term in enumerate(sliced):
+        sliced[index] = sliced[index].strip()
+
+    html = main
+    if len(sliced) > 1:
+        html += "<br>("
+        html += ", ".join(sliced)
+        html += ")"
+    elif len(sliced) > 0:
+        html += f", {sliced[0]}"
+
+    return html

@@ -100,7 +100,7 @@ Must sound similar to https://chinese.yabla.com/chinese-pinyin-chart.php
 | gan    |      |
 | gang   |      |
 | gao    |      |
-| ge     |      |
+| ge     | Gestank |
 | gei    |      |
 | gen    |      |
 | geng   |      |
@@ -167,7 +167,7 @@ Must sound similar to https://chinese.yabla.com/chinese-pinyin-chart.php
 | kun    |      |
 | kuo    |      |
 | la     |      |
-| lai    |      |
+| lai    | lie |
 | lan    |      |
 | lang   |      |
 | lao    |      |
@@ -293,7 +293,7 @@ Must sound similar to https://chinese.yabla.com/chinese-pinyin-chart.php
 | sha    |      |
 | shai   |      |
 | shan   |      |
-| shang  |      |
+| shang  | Shanghai |
 | shao   |      |
 | she    |      |
 | shei   |      |
@@ -341,7 +341,7 @@ Must sound similar to https://chinese.yabla.com/chinese-pinyin-chart.php
 | wai    |      |
 | wan    |      |
 | wang   |      |
-| wei    |      |
+| wei    | way |
 | wen    |      |
 | weng   |      |
 | wo     | war (English) |
@@ -393,7 +393,7 @@ Must sound similar to https://chinese.yabla.com/chinese-pinyin-chart.php
 | zhen   |      |
 | zheng  |      |
 | zhi    |      |
-| zhong  |      |
+| zhong  | sching schang zhong |
 | zhou   |      |
 | zhu    |      |
 | zhua   |      |

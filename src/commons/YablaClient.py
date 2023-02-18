@@ -102,7 +102,7 @@ def fillExamplesUpWithOtherWords(hanziChar, wordExamples):
                                             mng=yablaWord.meaning,
                                             pyn=yablaWord.pinyin)
         hanziChar.exm.append(exampleWord)
-        if len(hanziChar.exm) == 10:
+        if len(hanziChar.exm) == 20:
             break
 
 
@@ -138,14 +138,18 @@ def checkIfHanziIsTraditionalForm(hanziChar, hanziListChar, yablaWords):
 
 
 def identifyHanziAndGetWordExamples(hanziChar, hanziListChar, scoredReadings, yablaWords):
-    wordExamples = []
+    singleHanziWords = []
+    multiHanziWords = []
     for index, yablaWord in enumerate(yablaWords):
+
         if yablaWord.currentForm == hanziListChar.hanzi or yablaWord.traditionalForm == hanziListChar.hanzi:
             hanziChar.trd = yablaWord.traditionalForm
             hanziChar.cur = yablaWord.currentForm
             hanziChar.mng.append(yablaWord.meaning)
             hanziChar.addPinyin(yablaWord.pinyin)
             scoredReadings.update({yablaWord.pinyin: 0})
+            singleHanziWords.append(yablaWord)
         else:
-            wordExamples.append(yablaWord)
-    return wordExamples
+            multiHanziWords.append(yablaWord)
+
+    return singleHanziWords + multiHanziWords

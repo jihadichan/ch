@@ -130,9 +130,8 @@ function createSolution() {
 }
 
 function getMnemonicsSolution() {
-    var kana = "([\u4E00-\u9FAF\u3040-\u3096\u30A1-\u30FA\uFF66-\uFF9D\u31F0-\u31FF]+\.?)+";
     var readingHtml = mnemonicField.html();
-    var readingRegex = new RegExp(kana + " - .*?<br\/?>");
+    var readingRegex = new RegExp(".{1,6} - .*?<br\/?>");
     var readings = readingRegex.exec(readingHtml);
     if (readings == null) {
         return "";
@@ -142,7 +141,7 @@ function getMnemonicsSolution() {
     while (readings != null) {
         var split = readings[0].split(" - ");
         html += "<tr>";
-        html += "<td class='nowrap'>" + split[0] + "</td>";
+        html += "<td class='nowrap'>" + split[0].replace(/<br\/?>/, "") + "</td>";
         html += "<td>" + split[1] + "</td>";
         html += "</tr>";
         readingHtml = readingHtml.replace(readingRegex, "");

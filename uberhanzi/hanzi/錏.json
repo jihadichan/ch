@@ -1,1 +1,1 @@
-{"hnz": "錏", "trd": "錏", "isTrd": true, "cmp": ["金 (metal/money/gold)", "亞 (Unknown)"], "mng": ["ammonium", "ammonium (old)"], "pyn": ["yà"], "exm": [], "cur": "铔"}
+{"hnz": "錏", "trd": "錏", "isTrd": true, "cmp": ["金 (metal/money/gold)", "亞 (Unknown)"], "mng": ["ammonium", "ammonium (old)"], "pyn": ["yà"], "exm": [{"cur": "錏", "trd": null, "mng": "ammonium", "pyn": "yà"}, {"cur": "铔", "trd": "錏", "mng": "ammonium (old)", "pyn": "yà"}], "cur": "铔"}

@@ -26,7 +26,7 @@ def uberhanzi(scrape_hanzi: bool, scrape_mp3: bool, create_csv: bool) -> command
         exit()
 
     if create_csv:
-        CreateCsv.create(hanziFreqLookup, radicalsLookup, pinyinLookup)
+        CreateCsv.create(hanziFreqLookup, pinyinLookup)
         exit()
 
     Utils.exitWithError("No command given. Use --help")

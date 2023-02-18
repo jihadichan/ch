@@ -1,5 +1,6 @@
 {
   "hnz": "話",
+  "trd": "話",
   "isTrd": true,
   "cmp": [
     "言 (to speak/to say/talk/word)",
@@ -16,6 +17,12 @@
     "huà"
   ],
   "exm": [
+    {
+      "cur": "话",
+      "trd": "話",
+      "mng": "dialect, language, spoken words, speech, talk, words, conversation, what sb said",
+      "pyn": "huà"
+    },
     {
       "cur": "电话",
       "trd": "電話",
@@ -75,8 +82,61 @@
       "trd": "空話",
       "mng": "empty talk, bunk, malicious gossip",
       "pyn": "kōng huà"
+    },
+    {
+      "cur": "坏话",
+      "trd": "壞話",
+      "mng": "unpleasant talk, malicious words",
+      "pyn": "huài huà"
+    },
+    {
+      "cur": "会话",
+      "trd": "會話",
+      "mng": "conversation",
+      "pyn": "huì huà"
+    },
+    {
+      "cur": "俗话",
+      "trd": "俗話",
+      "mng": "common saying, proverb",
+      "pyn": "sú huà"
+    },
+    {
+      "cur": "好话",
+      "trd": "好話",
+      "mng": "words of praise, to speak well of",
+      "pyn": "hǎo huà"
+    },
+    {
+      "cur": "谈话",
+      "trd": "談話",
+      "mng": "talk, conversation",
+      "pyn": "tán huà"
+    },
+    {
+      "cur": "神话",
+      "trd": "神話",
+      "mng": "legend, fairy tale, myth, mythology",
+      "pyn": "shén huà"
+    },
+    {
+      "cur": "笑话",
+      "trd": "笑話",
+      "mng": "joke, jest, to laugh at, to mock",
+      "pyn": "xiào huà"
+    },
+    {
+      "cur": "白话",
+      "trd": "白話",
+      "mng": "spoken language, vernacular",
+      "pyn": "bái huà"
+    },
+    {
+      "cur": "话语",
+      "trd": "話語",
+      "mng": "words, speech, utterance, discourse",
+      "pyn": "huà yǔ"
     }
   ],
-  "trd": "話",
   "cur": "话"
 }
