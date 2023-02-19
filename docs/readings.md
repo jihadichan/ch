@@ -44,7 +44,7 @@ Must sound similar to https://chinese.yabla.com/chinese-pinyin-chart.php
 | chi    |      |
 | chong  |      |
 | chou   |      |
-| chu    |      |
+| chu    | chew |
 | chua   |      |
 | chuai  |      |
 | chuan  |      |
@@ -64,12 +64,12 @@ Must sound similar to https://chinese.yabla.com/chinese-pinyin-chart.php
 | dai    |      |
 | dan    |      |
 | dang   |      |
-| dao    |      |
+| dao    | daoism |
 | de     |      |
 | dei    |      |
 | den    |      |
 | deng   |      |
-| di     |      |
+| di     | Diamant (German) |
 | dian   |      |
 | diao   |      |
 | die    |      |
@@ -79,7 +79,7 @@ Must sound similar to https://chinese.yabla.com/chinese-pinyin-chart.php
 | dou    |      |
 | du     |      |
 | duan   |      |
-| dui    |      |
+| dui    | Dwayne The Rock Johnson |
 | dun    |      |
 | duo    |      |
 | e      |      |
@@ -130,7 +130,7 @@ Must sound similar to https://chinese.yabla.com/chinese-pinyin-chart.php
 | huai   |      |
 | huan   |      |
 | huang  |      |
-| hui    |      |
+| hui    | Hui people (Chinese Muslims) |
 | hun    |      |
 | huo    |      |
 | ji     |      |
@@ -142,7 +142,7 @@ Must sound similar to https://chinese.yabla.com/chinese-pinyin-chart.php
 | jin    |      |
 | jing   |      |
 | jiong  |      |
-| jiu    |      |
+| jiu    | Jew |
 | ju     |      |
 | juan   |      |
 | jue    |      |
@@ -152,7 +152,7 @@ Must sound similar to https://chinese.yabla.com/chinese-pinyin-chart.php
 | kan    |      |
 | kang   |      |
 | kao    |      |
-| ke     |      |
+| ke     | Keks |
 | kei    |      |
 | ken    |      |
 | keng   |      |
@@ -219,7 +219,7 @@ Must sound similar to https://chinese.yabla.com/chinese-pinyin-chart.php
 | nei    |      |
 | nen    |      |
 | neng   |      |
-| ni     |      |
+| ni     | knee, kneel |
 | nian   |      |
 | niang  |      |
 | niao   |      |
@@ -299,7 +299,7 @@ Must sound similar to https://chinese.yabla.com/chinese-pinyin-chart.php
 | shei   |      |
 | shen   |      |
 | sheng  |      |
-| shi    | shit |
+| shi    | sheeit (like the German "sch" with an "E") |
 | shou   |      |
 | shu    |      |
 | shua   |      |
@@ -308,7 +308,7 @@ Must sound similar to https://chinese.yabla.com/chinese-pinyin-chart.php
 | shuang |      |
 | shui   |      |
 | shun   |      |
-| shuo   |      |
+| shuo   | shut off |
 | si     |      |
 | song   |      |
 | sou    |      |
@@ -363,8 +363,8 @@ Must sound similar to https://chinese.yabla.com/chinese-pinyin-chart.php
 | ya     |      |
 | yan    |      |
 | yang   |      |
-| yao    |      |
-| ye     |      |
+| yao    | yaohoo |
+| ye     | oh yeah |
 | yi     | idiot |
 | yin    |      |
 | ying   |      |

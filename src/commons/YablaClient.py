@@ -39,11 +39,13 @@ def lookUpHanzi(hanziListChar: HanziListChar, hanziFreqDict: HanziFreqLookup, ra
 
     hanziChar = HanziChar.create(hanzi=hanziListChar.hanzi)
     scoredReadings = {}
+    pinyinAndMeanings = {}
 
     yablaWords = parseYablaResponse(response)
     checkIfHanziIsTraditionalForm(hanziChar, hanziListChar, yablaWords)
-    wordExamples = identifyHanziAndGetWordExamples(hanziChar, hanziListChar, scoredReadings, yablaWords)
+    wordExamples = identifyHanziAndGetWordExamples(hanziChar, hanziListChar, scoredReadings, pinyinAndMeanings, yablaWords)
     scoreReadings(hanziChar, scoredReadings, yablaWords)
+    compileMeanings(hanziChar, scoredReadings, pinyinAndMeanings)
     findAtLeastOneExampleForEachReading(hanziChar, wordExamples)
     fillExamplesUpWithOtherWords(hanziChar, wordExamples)
     scrapeComponentsOfHanziCharacter(hanziChar, hanziFreqDict, hanziListChar, radicalsLookup)
@@ -131,13 +133,21 @@ def scoreReadings(hanziChar, scoredReadings, yablaWords):
         hanziChar.addPinyin(obj[0])
 
 
+def compileMeanings(hanziChar: HanziChar, scoredReadings: dict, pinyinAndMeanings: dict):
+    counter = Counter(scoredReadings)
+    for obj in counter.most_common():
+        meanings = pinyinAndMeanings[obj[0]]
+        for meaning in meanings:
+            hanziChar.mng.append(meaning)
+
+
 def checkIfHanziIsTraditionalForm(hanziChar, hanziListChar, yablaWords):
     for yablaWord in yablaWords:
         if yablaWord.traditionalForm and yablaWord.traditionalForm == hanziListChar.hanzi:
             hanziChar.isTrd = True
 
 
-def identifyHanziAndGetWordExamples(hanziChar, hanziListChar, scoredReadings, yablaWords):
+def identifyHanziAndGetWordExamples(hanziChar, hanziListChar, scoredReadings, pinyinAndMeanings, yablaWords):
     singleHanziWords = []
     multiHanziWords = []
     for index, yablaWord in enumerate(yablaWords):
@@ -145,9 +155,13 @@ def identifyHanziAndGetWordExamples(hanziChar, hanziListChar, scoredReadings, ya
         if yablaWord.currentForm == hanziListChar.hanzi or yablaWord.traditionalForm == hanziListChar.hanzi:
             hanziChar.trd = yablaWord.traditionalForm
             hanziChar.cur = yablaWord.currentForm
-            hanziChar.mng.append(yablaWord.meaning)
             hanziChar.addPinyin(yablaWord.pinyin)
             scoredReadings.update({yablaWord.pinyin: 0})
+
+            if yablaWord.pinyin not in pinyinAndMeanings:
+                pinyinAndMeanings[yablaWord.pinyin] = []
+            pinyinAndMeanings[yablaWord.pinyin].append(yablaWord.meaning)
+
             singleHanziWords.append(yablaWord)
         else:
             multiHanziWords.append(yablaWord)

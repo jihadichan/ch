@@ -86,7 +86,8 @@ def createMnemonics(hanziListChar: HanziListChar, hanziChar: HanziChar):
 
 
 def createConcept(hanziChar: HanziChar):
-    meanings = split(",", hanziChar.mng[0])
+    combinedMeanings = ", ".join(hanziChar.mng)
+    meanings = split(",", combinedMeanings)
     main = meanings.pop(0).strip()
     sliced = meanings[0:3]
     for index, term in enumerate(sliced):
