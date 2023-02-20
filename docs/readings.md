@@ -1,6 +1,10 @@
 # Readings
 
-Must sound similar to https://chinese.yabla.com/chinese-pinyin-chart.php
+- Must sound similar to https://chinese.yabla.com/chinese-pinyin-chart.php
+- Or this: https://yoyochinese.com/chinese-learning-tools/Mandarin-Chinese-pronunciation-lesson/pinyin-chart-table
+- Pronunciation explainers: http://www.meetmandarin.com/articles/chinese-pronunciation-guide.html
+
+
 
 | Pinyin     | Mnemonic    |
 | ------ | ---- |
@@ -21,28 +25,28 @@ Must sound similar to https://chinese.yabla.com/chinese-pinyin-chart.php
 | bian   | bien (good, Spanish) |
 | biao   |      |
 | bie    |      |
-| bin    |      |
-| bing   |      |
-| bo     |      |
+| bin    | bin (English) |
+| bing   | Bing |
+| bo     | bo staff |
 | bu     | books |
-| ca     |      |
-| cai    |      |
-| can    |      |
-| cang   |      |
+| ca     | tsar |
+| cai    | Zeit |
+| can    | Gezanke |
+| cang   | Zange |
 | cao    |      |
-| ce     |      |
-| cen    |      |
-| ceng   |      |
-| cha    |      |
-| chai   |      |
-| chan   |      |
-| chang  |      |
-| chao   |      |
-| che    |      |
-| chen   |      |
-| cheng  |      |
-| chi    |      |
-| chong  |      |
+| ce     | tz tz tz |
+| cen    | Zen Meditation (German) |
+| ceng   | zwängen |
+| cha    | charge |
+| chai   | chai (tea) |
+| chan   | Jackie-chan |
+| chang  | change |
+| chao   | tschau (ciao) |
+| che    | Che Guevara |
+| chen   |  |
+| cheng  | big chungus |
+| chi    | chill |
+| chong  | sching schang schong |
 | chou   |      |
 | chu    | chew |
 | chua   |      |
@@ -52,23 +56,23 @@ Must sound similar to https://chinese.yabla.com/chinese-pinyin-chart.php
 | chui   |      |
 | chun   |      |
 | chuo   |      |
-| ci     |      |
+| ci     | Zitze |
 | cong   |      |
 | cou    |      |
-| cu     |      |
+| cu     | mach die Tür zu |
 | cuan   |      |
 | cui    |      |
 | cun    |      |
 | cuo    |      |
-| da     |      |
-| dai    |      |
-| dan    |      |
-| dang   |      |
+| da     | Dach |
+| dai    | die |
+| dan    | danke |
+| dang   | drangsalieren |
 | dao    | daoism |
-| de     |      |
-| dei    |      |
-| den    |      |
-| deng   |      |
+| de     | death |
+| dei    | day |
+| den    | Dunst |
+| deng   | Dunkel |
 | di     | Diamant (German) |
 | dian   |      |
 | diao   |      |
@@ -81,14 +85,14 @@ Must sound similar to https://chinese.yabla.com/chinese-pinyin-chart.php
 | duan   |      |
 | dui    | Dwayne The Rock Johnson |
 | dun    |      |
-| duo    |      |
+| duo    | dwarf |
 | e      |      |
 | en     |      |
 | eng    |      |
-| er     |      |
-| fa     |      |
+| er     | Argentina |
+| fa     | Fahrrad |
 | fan    |      |
-| fang   |      |
+| fang   | Fangzähne |
 | fei    |      |
 | fen    |      |
 | feng   |      |
@@ -113,7 +117,7 @@ Must sound similar to https://chinese.yabla.com/chinese-pinyin-chart.php
 | guang  |      |
 | gui    |      |
 | gun    |      |
-| guo    |      |
+| guo    | Guo Island |
 | ha     |      |
 | hai    |      |
 | han    |      |
@@ -124,7 +128,7 @@ Must sound similar to https://chinese.yabla.com/chinese-pinyin-chart.php
 | hen    |      |
 | heng   |      |
 | hong   |      |
-| hou    |      |
+| hou    | hoe |
 | hu     |      |
 | hua    |      |
 | huai   |      |
@@ -134,13 +138,13 @@ Must sound similar to https://chinese.yabla.com/chinese-pinyin-chart.php
 | hun    |      |
 | huo    |      |
 | ji     |      |
-| jia    |      |
+| jia    | Jamaika |
 | jian   |      |
 | jiang  |      |
 | jiao   |      |
 | jie    |      |
 | jin    |      |
-| jing   |      |
+| jing   | jingoist |
 | jiong  |      |
 | jiu    | Jew |
 | ju     |      |
@@ -151,7 +155,7 @@ Must sound similar to https://chinese.yabla.com/chinese-pinyin-chart.php
 | kai    |      |
 | kan    |      |
 | kang   |      |
-| kao    |      |
+| kao    | Kakao |
 | ke     | Keks |
 | kei    |      |
 | ken    |      |
@@ -174,7 +178,7 @@ Must sound similar to https://chinese.yabla.com/chinese-pinyin-chart.php
 | le     |      |
 | lei    |      |
 | leng   |      |
-| li     |      |
+| li     | Bruce Lee |
 | lia    |      |
 | lian   |      |
 | liang  |      |
@@ -196,9 +200,9 @@ Must sound similar to https://chinese.yabla.com/chinese-pinyin-chart.php
 | man    |      |
 | mang   |      |
 | mao    |      |
-| me     |      |
+| me     | Messer |
 | mei    |      |
-| men    |      |
+| men    | men |
 | meng   |      |
 | mi     |      |
 | mian   |      |
@@ -220,7 +224,7 @@ Must sound similar to https://chinese.yabla.com/chinese-pinyin-chart.php
 | nen    |      |
 | neng   |      |
 | ni     | knee, kneel |
-| nian   |      |
+| nian   | niente (Italian, nothing) |
 | niang  |      |
 | niao   |      |
 | nie    |      |
@@ -263,11 +267,11 @@ Must sound similar to https://chinese.yabla.com/chinese-pinyin-chart.php
 | qing   |      |
 | qiong  |      |
 | qiu    |      |
-| qu     |      |
+| qu     | tschüss |
 | quan   |      |
 | que    |      |
 | qun    |      |
-| ran    |      |
+| ran    | run |
 | rang   |      |
 | rao    |      |
 | re     |      |
@@ -298,8 +302,8 @@ Must sound similar to https://chinese.yabla.com/chinese-pinyin-chart.php
 | she    |      |
 | shei   |      |
 | shen   |      |
-| sheng  |      |
-| shi    | sheeit (like the German "sch" with an "E") |
+| sheng  | shunga |
+| shi    | shieet (like the German "sch" with an "E") |
 | shou   |      |
 | shu    |      |
 | shua   |      |
@@ -316,7 +320,7 @@ Must sound similar to https://chinese.yabla.com/chinese-pinyin-chart.php
 | suan   |      |
 | sui    |      |
 | sun    |      |
-| suo    |      |
+| suo    | SWOT analysis |
 | ta     |      |
 | tai    |      |
 | tan    |      |
@@ -347,13 +351,13 @@ Must sound similar to https://chinese.yabla.com/chinese-pinyin-chart.php
 | wo     | war (English) |
 | wu     |      |
 | xi     |      |
-| xia    |      |
+| xia    | Shia |
 | xian   |      |
 | xiang  |      |
 | xiao   |      |
 | xie    |      |
 | xin    |      |
-| xing   |      |
+| xing   | shingles |
 | xiong  |      |
 | xiu    |      |
 | xu     |      |
@@ -368,9 +372,9 @@ Must sound similar to https://chinese.yabla.com/chinese-pinyin-chart.php
 | yi     | idiot |
 | yin    |      |
 | ying   |      |
-| yong   |      |
+| yong   | yongling (youngling) |
 | you    | yoghurt |
-| yu     |      |
+| yu     | yukata |
 | yuan   |      |
 | yue    |      |
 | yun    |      |
@@ -379,7 +383,7 @@ Must sound similar to https://chinese.yabla.com/chinese-pinyin-chart.php
 | zan    |      |
 | zang   |      |
 | zao    |      |
-| ze     |      |
+| ze     | ze Great Reset |
 | zei    |      |
 | zen    |      |
 | zeng   |      |
@@ -392,8 +396,8 @@ Must sound similar to https://chinese.yabla.com/chinese-pinyin-chart.php
 | zhei   |      |
 | zhen   |      |
 | zheng  |      |
-| zhi    |      |
-| zhong  | sching schang zhong |
+| zhi    | Djihad (German) |
+| zhong  | jonglieren |
 | zhou   |      |
 | zhu    |      |
 | zhua   |      |
@@ -402,12 +406,12 @@ Must sound similar to https://chinese.yabla.com/chinese-pinyin-chart.php
 | zhuang |      |
 | zhui   |      |
 | zhun   |      |
-| zhuo   |      |
-| zi     |      |
+| zhuo   | Jewodo (Jewish judo) |
+| zi     | zipper |
 | zong   |      |
 | zou    |      |
 | zu     |      |
 | zuan   |      |
 | zui    |      |
 | zun    |      |
-| zuo    |      |
+| zuo    | zoologist |
