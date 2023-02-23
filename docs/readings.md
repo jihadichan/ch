@@ -3,6 +3,10 @@
 - Must sound similar to https://chinese.yabla.com/chinese-pinyin-chart.php
 - Or this: https://yoyochinese.com/chinese-learning-tools/Mandarin-Chinese-pronunciation-lesson/pinyin-chart-table
 - Pronunciation explainers: http://www.meetmandarin.com/articles/chinese-pronunciation-guide.html
+- For mnemonics
+  - Words starting with: [dict.cc](https://www.dict.cc/?s=wor*) search for `wor*`
+  - Words ending with, see [here](https://www.thefreedictionary.com/words-that-end-in-with)
+
 
 
 
@@ -13,13 +17,13 @@
 | an     | anal, Antichrist (German) |
 | ang    | Angst |
 | ao     | AOK |
-| ba     | Barbie, Babylon |
+| ba     | Barbie |
 | bai    | buy |
 | ban    | ban |
 | bang   | Bangalore |
 | bao    | Baustelle |
 | bei    | baby |
-| ben    | Ben |
+| ben    | Big Ben |
 | beng   | banger |
 | bi     | bi-sexual |
 | bian   | bien (good, Spanish) |
@@ -46,7 +50,7 @@
 | chen   |  |
 | cheng  | big chungus |
 | chi    | chill |
-| chong  | sching schang schong |
+| chong  |  |
 | chou   |      |
 | chu    | chew |
 | chua   |      |
@@ -57,7 +61,7 @@
 | chun   |      |
 | chuo   |      |
 | ci     | Zitze |
-| cong   |      |
+| cong   | Zonk (German) |
 | cou    |      |
 | cu     | mach die Tür zu |
 | cuan   |      |
@@ -67,21 +71,21 @@
 | da     | Dach |
 | dai    | die |
 | dan    | danke |
-| dang   | drangsalieren |
+| dang   | dangerous |
 | dao    | daoism |
 | de     | death |
 | dei    | day |
 | den    | Dunst |
-| deng   | Dunkel |
+| deng   | dunkel |
 | di     | Diamant (German) |
-| dian   |      |
+| dian   | Canadian |
 | diao   |      |
 | die    |      |
-| ding   |      |
+| ding   | dicke Dinger |
 | diu    |      |
-| dong   |      |
+| dong   | donkey |
 | dou    |      |
-| du     |      |
+| du     | duel |
 | duan   |      |
 | dui    | Dwayne The Rock Johnson |
 | dun    |      |
@@ -94,7 +98,7 @@
 | fan    |      |
 | fang   | Fangzähne |
 | fei    |      |
-| fen    |      |
+| fen    | Fenster |
 | feng   |      |
 | fo     |      |
 | fou    |      |
@@ -103,17 +107,17 @@
 | gai    |      |
 | gan    |      |
 | gang   |      |
-| gao    |      |
+| gao    | Gauner |
 | ge     | Gestank |
 | gei    |      |
 | gen    |      |
 | geng   |      |
-| gong   |      |
+| gong   | Falun Gong |
 | gou    |      |
 | gu     |      |
 | gua    |      |
 | guai   |      |
-| guan   |      |
+| guan   | Guantanamo |
 | guang  |      |
 | gui    |      |
 | gun    |      |
@@ -122,38 +126,38 @@
 | hai    |      |
 | han    |      |
 | hang   |      |
-| hao    |      |
+| hao    | howitzer |
 | he     |      |
 | hei    |      |
-| hen    |      |
+| hen    | hand |
 | heng   |      |
 | hong   |      |
 | hou    | hoe |
 | hu     |      |
 | hua    |      |
 | huai   |      |
-| huan   |      |
+| huan   | Don Juan |
 | huang  |      |
 | hui    | Hui people (Chinese Muslims) |
 | hun    |      |
 | huo    |      |
-| ji     |      |
+| ji     | jibberish |
 | jia    | Jamaika |
-| jian   |      |
-| jiang  |      |
+| jian   | Jiyenna |
+| jiang  | junkie |
 | jiao   |      |
 | jie    |      |
-| jin    |      |
+| jin    | jinn |
 | jing   | jingoist |
 | jiong  |      |
-| jiu    | Jew |
+| jiu    | GI Joe |
 | ju     |      |
 | juan   |      |
 | jue    |      |
-| jun    |      |
+| jun    | Jingle |
 | ka     |      |
-| kai    |      |
-| kan    |      |
+| kai    | Kaiser |
+| kan    | Kanagawa |
 | kang   |      |
 | kao    | Kakao |
 | ke     | Keks |
@@ -181,7 +185,7 @@
 | li     | Bruce Lee |
 | lia    |      |
 | lian   |      |
-| liang  |      |
+| liang  | lange Liane |
 | liao   |      |
 | lie    |      |
 | lin    |      |
@@ -201,20 +205,20 @@
 | mang   |      |
 | mao    |      |
 | me     | Messer |
-| mei    |      |
+| mei    | mayonnaise |
 | men    | men |
 | meng   |      |
 | mi     |      |
-| mian   |      |
+| mian   | Myanmar |
 | miao   |      |
 | mie    |      |
-| min    |      |
+| min    | minimum, minimal, minute |
 | ming   |      |
 | miu    |      |
 | mo     |      |
 | mou    |      |
 | mu     |      |
-| na     |      |
+| na     | Nacht |
 | nai    |      |
 | nan    |      |
 | nang   |      |
@@ -222,7 +226,7 @@
 | ne     |      |
 | nei    |      |
 | nen    |      |
-| neng   |      |
+| neng   | Ordnung |
 | ni     | knee, kneel |
 | nian   | niente (Italian, nothing) |
 | niang  |      |
@@ -257,14 +261,14 @@
 | po     |      |
 | pou    |      |
 | pu     |      |
-| qi     |      |
+| qi     | cheese |
 | qia    |      |
-| qian   |      |
+| qian   | Tschetschenien |
 | qiang  |      |
 | qiao   |      |
 | qie    |      |
 | qin    |      |
-| qing   |      |
+| qing   | ching ching |
 | qiong  |      |
 | qiu    |      |
 | qu     | tschüss |
@@ -277,10 +281,10 @@
 | re     |      |
 | ren    | rennen |
 | reng   |      |
-| ri     |      |
+| ri     | rich |
 | rong   |      |
 | rou    |      |
-| ru     |      |
+| ru     | rule |
 | rua    |      |
 | ruan   |      |
 | rui    |      |
@@ -288,8 +292,8 @@
 | ruo    |      |
 | sa     |      |
 | sai    |      |
-| san    |      |
-| sang   |      |
+| san    | Santa-san |
+| sang   | unsung hero |
 | sao    |      |
 | se     |      |
 | sen    |      |
@@ -304,7 +308,7 @@
 | shen   |      |
 | sheng  | shunga |
 | shi    | shieet (like the German "sch" with an "E") |
-| shou   |      |
+| shou   | show |
 | shu    |      |
 | shua   |      |
 | shuai  |      |
@@ -320,8 +324,8 @@
 | suan   |      |
 | sui    |      |
 | sun    |      |
-| suo    | SWOT analysis |
-| ta     |      |
+| suo    | SWAT team |
+| ta     | Tag |
 | tai    |      |
 | tan    |      |
 | tang   |      |
@@ -329,49 +333,49 @@
 | te     |      |
 | tei    |      |
 | teng   |      |
-| ti     |      |
-| tian   |      |
+| ti     | tea |
+| tian   | Tiananmen Square |
 | tiao   |      |
 | tie    |      |
 | ting   |      |
-| tong   |      |
-| tou    |      |
+| tong   | Tonga |
+| tou    | toe |
 | tu     |      |
 | tuan   |      |
 | tui    |      |
 | tun    |      |
 | tuo    |      |
 | wa     |      |
-| wai    |      |
+| wai    | Weimar Republic |
 | wan    |      |
 | wang   |      |
 | wei    | way |
-| wen    |      |
+| wen    | Wendy's burger |
 | weng   |      |
 | wo     | war (English) |
-| wu     |      |
+| wu     | Uhr |
 | xi     |      |
 | xia    | Shia |
-| xian   |      |
-| xiang  |      |
-| xiao   |      |
-| xie    |      |
-| xin    |      |
+| xian   | Schienenbahn (schi-en) |
+| xiang  | Schianzug |
+| xiao   | shower |
+| xie    | schief |
+| xin    | shin |
 | xing   | shingles |
 | xiong  |      |
 | xiu    |      |
 | xu     |      |
 | xuan   |      |
-| xue    |      |
+| xue    | Schuweden |
 | xun    |      |
 | ya     |      |
 | yan    |      |
-| yang   |      |
+| yang   | young |
 | yao    | yaohoo |
 | ye     | oh yeah |
 | yi     | idiot |
-| yin    |      |
-| ying   |      |
+| yin    | Pinyin |
+| ying   | ying and yang |
 | yong   | yongling (youngling) |
 | you    | yoghurt |
 | yu     | yukata |
@@ -389,17 +393,17 @@
 | zeng   |      |
 | zha    |      |
 | zhai   |      |
-| zhan   |      |
+| zhan   | Jeanne d’Arc |
 | zhang  |      |
 | zhao   |      |
 | zhe    | Django Unchained |
 | zhei   |      |
 | zhen   |      |
-| zheng  |      |
+| zheng  | Jungle |
 | zhi    | Djihad (German) |
 | zhong  | jonglieren |
 | zhou   |      |
-| zhu    |      |
+| zhu    | Jew |
 | zhua   |      |
 | zhuai  |      |
 | zhuan  |      |
@@ -412,6 +416,6 @@
 | zou    |      |
 | zu     |      |
 | zuan   |      |
-| zui    |      |
+| zui    | ze way |
 | zun    |      |
 | zuo    | zoologist |
