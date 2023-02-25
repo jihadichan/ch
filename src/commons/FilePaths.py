@@ -50,3 +50,10 @@ def outputDir() -> Path:
     if not path.exists():
         Utils.exitWithError(f"Failed to find output dir at: {path.absolute()}")
     return path
+
+
+def readingsMarkdownFile() -> Path:
+    path = Path("docs/readings.md")
+    if not path.exists():
+        Utils.exitWithError(f"Failed to find readings.md at: {path.absolute()}")
+    return path

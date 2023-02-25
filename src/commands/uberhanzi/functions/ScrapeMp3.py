@@ -31,5 +31,3 @@ def scrape(pinyinLookup: PinyinLookup):
             response = requests.get(f"{baseUrl}/{pinyin.ascii}.mp3", stream=True)
             with open(outfile, 'wb') as f:
                 f.write(response.content)
-
-    pass
