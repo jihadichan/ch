@@ -109,7 +109,7 @@
 | gang   |      |
 | gao    | Gauner |
 | ge     | Gestank |
-| gei    |      |
+| gei    | gay |
 | gen    |      |
 | geng   |      |
 | gong   | Falun Gong |
@@ -127,14 +127,14 @@
 | han    |      |
 | hang   |      |
 | hao    | howitzer |
-| he     |      |
+| he     | head |
 | hei    |      |
 | hen    | hand |
 | heng   |      |
 | hong   |      |
 | hou    | hoe |
 | hu     |      |
-| hua    |      |
+| hua    | Huawei |
 | huai   |      |
 | huan   | Don Juan |
 | huang  |      |
@@ -178,7 +178,7 @@
 | lai    | lie |
 | lan    |      |
 | lang   |      |
-| lao    |      |
+| lao    | laufen |
 | le     |      |
 | lei    |      |
 | leng   |      |
@@ -210,7 +210,7 @@
 | meng   |      |
 | mi     |      |
 | mian   | Myanmar |
-| miao   |      |
+| miao   | meow |
 | mie    |      |
 | min    | minimum, minimal, minute |
 | ming   |      |
@@ -224,7 +224,7 @@
 | nang   |      |
 | nao    |      |
 | ne     |      |
-| nei    |      |
+| nei    | nay-sayer |
 | nen    |      |
 | neng   | Ordnung |
 | ni     | knee, kneel |
@@ -279,7 +279,7 @@
 | rang   |      |
 | rao    |      |
 | re     |      |
-| ren    | rennen |
+| ren    | renegade |
 | reng   |      |
 | ri     | rich |
 | rong   |      |
@@ -305,7 +305,7 @@
 | shao   |      |
 | she    |      |
 | shei   |      |
-| shen   |      |
+| shen   | Schund |
 | sheng  | shunga |
 | shi    | shieet (like the German "sch" with an "E") |
 | shou   | show |
@@ -317,7 +317,7 @@
 | shui   |      |
 | shun   |      |
 | shuo   | shut off |
-| si     |      |
+| si     | Sith lord |
 | song   |      |
 | sou    |      |
 | su     |      |
@@ -330,7 +330,7 @@
 | tan    |      |
 | tang   |      |
 | tao    |      |
-| te     |      |
+| te     | technique |
 | tei    |      |
 | teng   |      |
 | ti     | tea |
@@ -354,7 +354,7 @@
 | weng   |      |
 | wo     | war (English) |
 | wu     | Uhr |
-| xi     |      |
+| xi     | sheep |
 | xia    | Shia |
 | xian   | Schienenbahn (schi-en) |
 | xiang  | Schianzug |
@@ -380,7 +380,7 @@
 | you    | yoghurt |
 | yu     | yukata |
 | yuan   |      |
-| yue    |      |
+| yue    | Juebiläum |
 | yun    |      |
 | za     |      |
 | zai    | seit |

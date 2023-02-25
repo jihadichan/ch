@@ -89,6 +89,8 @@ function renderFontSelection() {
     var hanzi = "";
     if (data.isTrd) {
         hanzi += data.cur+"<br><span class='kanji-highlight'>"+data.trd+"</span>"
+    } else if(data.trd){
+        hanzi += "<span>"+data.cur+"<br>"+data.trd+"</span>"
     } else {
         hanzi += "<span>"+data.cur+"</span>"
     }
