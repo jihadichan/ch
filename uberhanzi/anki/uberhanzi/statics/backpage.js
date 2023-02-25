@@ -30,6 +30,7 @@ function renderMetaData() {
     table += '<tr><td>Meanings</td><td>' + data.mng + '</td></tr>';
     table += '<tr><td>Components</td><td>' + components + '</td></tr>';
     table += '<tr><td>Pinyin</td><td>' + data.pyn + '</td></tr>';
+    table += '<tr><td>Mnemonics</td><td>' + renderReadingMnemonics() + '</td></tr>';
     if (data.trd) {
         table += '<tr><td>Traditional Form</td><td>' + data.trd + '</td></tr>';
     }
@@ -38,21 +39,21 @@ function renderMetaData() {
     $('#rendered-content').html(table);
 }
 
-function incrementCount(reading, readingCounts, type) {
-    var counts = readingCounts[reading];
-    if (counts) {
-        readingCounts[reading] = {
-            total: ++counts.total,
-            fnKJ: type === "fnKJ" ? ++counts.fnKJ : counts.fnKJ,
-            fnKN: type === "fnKN" ? ++counts.fnKN : counts.fnKN
-        };
-    } else {
-        readingCounts[reading] = {
-            total: 1,
-            fnKJ: type === "fnKJ" ? 1 : 0,
-            fnKN: type === "fnKN" ? 1 : 0
-        };
-    }
+function renderReadingMnemonics() {
+    var html = ""
+    var usedMnemonics = []
+    $.each(readings, function (index, reading) {
+        reading = reading.replace(/\d/, "");
+        var mnemonic = readingMnemonics[reading] || "???";
+        if (!usedMnemonics.includes(reading)) {
+            html += reading + " - " + mnemonic + "<br>"
+            usedMnemonics.push(reading)
+        }
+
+    })
+    html = html.replace(/<br>$/, "")
+
+    return html
 }
 
 function getRandomFontIds(n) {
@@ -67,21 +68,6 @@ function getRandomFontIds(n) {
         taken[x] = --len in taken ? taken[len] : len;
     }
     return result;
-}
-
-function renderFonts(amount, breakAfter) {
-    var kanji = hanziField.text();
-    var container = '<div class="fonts">';
-    var count = 1;
-    $.each(getRandomFontIds(amount), function (i, value) {
-        container += '<span class="kanji font-' + value + '">' + kanji + '</span>';
-        if (count++ % breakAfter === 0) {
-            container += '<br>';
-        }
-    });
-
-    container += '</div>';
-    $('#rendered-content').html(container);
 }
 
 function renderFontSelection() {

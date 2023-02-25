@@ -160,7 +160,7 @@
 | kan    | Kanake |
 | kang   | kangz and shit |
 | kao    | Kakao |
-| ke     | Küche |
+| ke     |  |
 | kei    | okay |
 | ken    | Kennzeichen |
 | keng   | kung fu |
