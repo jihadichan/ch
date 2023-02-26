@@ -365,7 +365,7 @@
 | xiong  |      |
 | xiu    |      |
 | xu     | Scüler |
-| xuan   | schwenken |
+| xuan   | schwenken, schwängern |
 | xue    | Schuweden |
 | xun    | Schund |
 | ya     | Jagd |
