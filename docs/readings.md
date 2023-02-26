@@ -13,7 +13,7 @@
 | Pinyin     | Mnemonic    |
 | ------ | ---- |
 | a      | Apfel |
-| ai     | Ai Uehara |
+| ai     | eyes |
 | an     | Antichrist (German) |
 | ang    | Angst |
 | ao     | Auschwitz |
@@ -27,8 +27,8 @@
 | beng   | Bungalow (German) |
 | bi     | beast |
 | bian   | bien (good, Spanish) |
-| biao   |      |
-| bie    |      |
+| biao   | Bierbauch |
+| bie    | Bielefeld (bi-e-lefeld) |
 | bin    | bin (English) |
 | bing   | Bing |
 | bo     | bo staff |
@@ -45,31 +45,31 @@
 | chai   | chai (tea) |
 | chan   | Jackie-chan |
 | chang  | change |
-| chao   | tschau (ciao) |
+| chao   | cheese chowder |
 | che    | Che Guevara |
 | chen   | change |
 | cheng  | big chungus |
-| chi    | chill |
+| chi    | Tschechien |
 | chong  | Chongqing |
 | chou   | choke |
 | chu    | chew |
 | chua   |      |
 | chuai  |      |
-| chuan  |      |
+| chuan  | Szechuan sauce |
 | chuang |      |
 | chui   |      |
-| chun   |      |
+| chun   |  |
 | chuo   |      |
 | ci     | Zitze |
 | cong   | Zonk (German) |
 | cou    | Amazone |
-| cu     | mach die Tür zu |
+| cu     | Zucker, Zufall |
 | cuan   |      |
-| cui    |      |
-| cun    |      |
+| cui    | Zweifel (z-wey) |
+| cun    |  |
 | cuo    |      |
 | da     | Dach |
-| dai    | die |
+| dai    | to die |
 | dan    | danke |
 | dang   | dangerous (Indian accent) |
 | dao    | daoism |
@@ -79,16 +79,16 @@
 | deng   | dunkel |
 | di     | Diamant (German) |
 | dian   | Canadian |
-| diao   |      |
-| die    |      |
-| ding   | dicke Dinger |
+| diao | Diamantenstaub, Dickbauch                  |
+| die    | Studie |
+| ding   | building |
 | diu    | due diligence |
 | dong   | donkey |
 | dou    | dough |
 | du     | duel |
 | duan   |      |
 | dui    | Dwayne The Rock Johnson |
-| dun    |      |
+| dun    | Dunst |
 | duo    | dwarf |
 | e      | ugh yikes |
 | en     | uncle (un deux trois) |
@@ -98,11 +98,11 @@
 | fan    | Fantasie |
 | fang   | Fangzähne |
 | fei    | fake |
-| fen    | fun |
+| fen    | Fenster |
 | feng   | fungus |
 | fo     | force |
 | fou    | foe |
-| fu     |      |
+| fu     | fuck you |
 | ga     | Gabel |
 | gai    | guy |
 | gan    | ganze Zeit |
@@ -114,12 +114,12 @@
 | geng   | Abneigung |
 | gong   | Falun Gong |
 | gou    | gold |
-| gu     |      |
-| gua    |      |
-| guai   |      |
+| gu     | Gummibär |
+| gua    | guano |
+| guai   | Paraguay (German) |
 | guan   | Guantanamo |
 | guang  |      |
-| gui    |      |
+| gui    | Sir Gawain (guway) |
 | gun    |      |
 | guo    | Guo Island |
 | ha     | Haar |
@@ -133,9 +133,9 @@
 | heng   | Hunger |
 | hong   | Hong Kong |
 | hou    | hoe |
-| hu     |      |
+| hu     | Hubschrauber |
 | hua    | Huawei |
-| huai   |      |
+| huai   | hu-white |
 | huan   | Don Juan |
 | huang  |      |
 | hui    | Hui people (Chinese Muslims) |
@@ -144,17 +144,17 @@
 | ji     | jibberish |
 | jia    | Jamaika |
 | jian   | Jiyenna |
-| jiang  | junkie |
+| jiang  | junkie (ji-unkie) |
 | jiao   |      |
 | jie    |      |
 | jin    | jinn |
 | jing   | jingoist |
-| jiong  |      |
-| jiu    | ju-jitsu |
-| ju     |      |
+| jiong  | Kim Jong-un |
+| jiu    | jiu-jitsu |
+| ju     | July |
 | juan   |      |
 | jue    |      |
-| jun    | Jingle |
+| jun    | junk |
 | ka     | California |
 | kai    | Kaiser |
 | kan    | Kanake |
@@ -166,13 +166,13 @@
 | keng   | kung fu |
 | kong   | King Kong |
 | kou    | copeium |
-| ku     |      |
-| kua    |      |
-| kuai   |      |
-| kuan   |      |
+| ku     | Ku Klux Klan |
+| kua    | Quadrat, Qualität |
+| kuai   | quite |
+| kuan   | kwanzaa |
 | kuang  |      |
-| kui    |      |
-| kun    |      |
+| kui    | earth quake |
+| kun    | Kunst |
 | kuo    |      |
 | la     | lachen |
 | lai    | lie |
@@ -184,22 +184,22 @@
 | leng   | Lunge |
 | li     | Bruce Lee |
 | lia    | Liane |
-| lian   |      |
+| lian   | Alien |
 | liang  |  |
-| liao   |      |
-| lie    |      |
-| lin    |      |
-| ling   |      |
-| liu    |      |
+| liao   | Liebeszauber |
+| lie    | Familie |
+| lin    | goblin |
+| ling   | botchling |
+| liu    | lieutenant (lie-utenant) |
 | long   | long |
 | lou    | low |
-| lu     |      |
-| lü     |      |
+| lu     | Luftschloss |
+| lü     | lügen |
 | luan   |      |
 | lüe    |      |
 | lun    |      |
-| luo    |      |
-| ma     | mummy |
+| luo    | Luo River |
+| ma     | mommy |
 | mai    | Matsumoto Mai |
 | man    | Mannsweib |
 | mang   | Manga (German) |
@@ -211,13 +211,13 @@
 | mi     | mix, mixer |
 | mian   | Myanmar |
 | miao   | meow |
-| mie    |      |
+| mie    | Mumie |
 | min    | minimum, minimal, minute |
-| ming   |      |
+| ming   | Ming dynasty |
 | miu    | Mewtwo |
 | mo     | battle mode |
 | mou    | barkeeper Moe |
-| mu     |      |
+| mu     | muh kuh, multiverse |
 | na     | Nacht |
 | nai    | night |
 | nan    | nano* (German) |
@@ -229,17 +229,17 @@
 | neng   | Ordnung |
 | ni     | knee, kneel |
 | nian   | niente (Italian, nothing) |
-| niang  |      |
-| niao   |      |
-| nie    |      |
-| nin    |      |
-| ning   |      |
+| niang  | Neil Young |
+| niao   | Nichtraucher |
+| nie    | Linie |
+| nin    | ninja |
+| ning   | beginning, dysfunctioning |
 | niu    | new |
 | nong   | nong (Idiot) |
 | nou    | know |
-| nu     |      |
-| nü     |      |
-| nuan   |      |
+| nu     | nuclear |
+| nü     | nüchtern |
+| nuan   | nuance |
 | nüe    |      |
 | nuo    |      |
 | o      | opera |
@@ -253,29 +253,29 @@
 | pen    | penetrate |
 | peng   | pungent |
 | pi     | pee |
-| pian   |      |
-| piao   |      |
+| pian   | Rupien, Äthiopien |
+| piao   | pieksauber, to pick out |
 | pie    | Pierre |
-| pin    |      |
-| ping   |      |
+| pin    | pinball |
+| ping   | Pinguin (German) |
 | po     | pope |
 | pou    | poet |
-| pu     |      |
+| pu     | poo |
 | qi     | chi |
 | qia    | chia seeds |
 | qian   | Tschetschenien |
 | qiang  |      |
-| qiao   |      |
+| qiao  | ciao (tschau) |
 | qie    |      |
-| qin    |      |
+| qin    | chin, chinchilla |
 | qing   | ching ching |
 | qiong  |      |
 | qiu    |      |
 | qu     | tschüss |
-| quan   |      |
+| quan   | 4tschuwen |
 | que    |      |
 | qun    |      |
-| ran    | run |
+| ran    | random |
 | rang   | Rang (German) |
 | rao    | rowdy |
 | re     |      |
@@ -285,11 +285,11 @@
 | rong   | wrong |
 | rou    | death row |
 | ru     | rule |
-| rua    |      |
-| ruan   |      |
-| rui    |      |
-| run    |      |
-| ruo    |      |
+| rua    | Ra (the god, English) |
+| ruan   | Rwanda |
+| rui    | death rays |
+| run    | run |
+| ruo    | raw |
 | sa     | Assad |
 | sai    | sigh |
 | san    | Santa-san |
@@ -309,21 +309,21 @@
 | sheng  | shunga |
 | shi    | shieet (like the German "sch" with an "E") |
 | shou   | show |
-| shu    |      |
-| shua   |      |
-| shuai  |      |
-| shuan  |      |
+| shu    | shoe |
+| shua   | Klaus Schwab |
+| shuai  | schweigen |
+| shuan  | Schwanz |
 | shuang |      |
 | shui   |      |
-| shun   |      |
+| shun   | Schwund |
 | shuo   | shut off |
 | si     | Sith lord |
 | song   | song |
 | sou    | Thomas Sowell |
-| su     |      |
+| su     | to sue |
 | suan   |      |
-| sui    |      |
-| sun    |      |
+| sui    | expressway |
+| sun    | Sun Tzu |
 | suo    | SWAT team |
 | ta     | Tag |
 | tai    | Thai boxer |
@@ -335,19 +335,19 @@
 | teng   | Blutung |
 | ti     | tea |
 | tian   | Tiananmen Square |
-| tiao   |      |
-| tie    |      |
-| ting   |      |
+| tiao   | tiefblau, tief traurig, tierhaut |
+| tie    | aktie |
+| ting   | eating, farting, hunting |
 | tong   | Tonga |
 | tou    | toe |
-| tu     |      |
-| tuan   |      |
-| tui    |      |
-| tun    |      |
+| tu     | Tuberkulose |
+| tuan   | Marie Antoinette |
+| tui    | Mark Twain |
+| tun    | twin (twen) |
 | tuo    |      |
-| wa     |      |
+| wa     | Wahnsinn |
 | wai    | Weimar Republic |
-| wan    |      |
+| wan    | Obi Wan Kenobi |
 | wang   |      |
 | wei    | way |
 | wen    | Wendy's burger |
@@ -360,18 +360,18 @@
 | xiang  | Schianzug |
 | xiao   | shower |
 | xie    | schief |
-| xin    | shin |
+| xin    | shin, Shinto priest |
 | xing   | shingles |
 | xiong  |      |
 | xiu    |      |
-| xu     |      |
-| xuan   |      |
+| xu     | Scüler |
+| xuan   | schwenken |
 | xue    | Schuweden |
-| xun    |      |
+| xun    | Schund |
 | ya     | Jagd |
 | yan    | Japanese Yen |
 | yang   | young |
-| yao    | yaohoo |
+| yao    | Jauche |
 | ye     | oh yeah |
 | yi     | idiot |
 | yin    | Pinyin |
@@ -381,7 +381,7 @@
 | yu     | yukata |
 | yuan   | Chinese Yuan |
 | yue    | Juebiläum |
-| yun    |      |
+| yun    | Soviet Yun-Yun |
 | za     | dSahne |
 | zai    | seit |
 | zan    | Zanzibar |
@@ -404,7 +404,7 @@
 | zhong  | jonglieren |
 | zhou   | GI Joe |
 | zhu    | Jew |
-| zhua   |      |
+| zhua   |  |
 | zhuai  |      |
 | zhuan  |      |
 | zhuang |      |
@@ -414,8 +414,8 @@
 | zi     | zipper |
 | zong   | Zongschreiber (German) |
 | zou    | danger zone |
-| zu     |      |
+| zu     | Zoom |
 | zuan   |      |
-| zui    |  |
-| zun    |      |
+| zui    | ze way |
+| zun    | zünden (dzunden) |
 | zuo    | zoologist |
