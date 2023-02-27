@@ -12,21 +12,21 @@
 
 | Pinyin     | Mnemonic    |
 | ------ | ---- |
-| a      | Apfel |
+| a      | Axt |
 | ai     | eyes |
-| an     | Antichrist (German) |
+| an     | anarchist |
 | ang    | Angst |
 | ao     | Auschwitz |
 | ba     | Barbie |
 | bai    | buy |
 | ban    | Banditen |
-| bang   | Bangalore |
+| bang   | Bangkok |
 | bao    | Baustelle |
 | bei    | baby |
 | ben    | Big Ben |
-| beng   | Bungalow (German) |
+| beng   | Übung |
 | bi     | beast |
-| bian   | bien (good, Spanish) |
+| bian   | Kolumbien |
 | biao   | Bierbauch |
 | bie    | Bielefeld (bi-e-lefeld) |
 | bin    | bin (English) |
@@ -38,26 +38,26 @@
 | can    | Gezanke |
 | cang   | Zange |
 | cao    | Zaun |
-| ce     | tz tz tz |
+| ce     | Katze |
 | cen    | Zensur |
 | ceng   | Zunge |
-| cha    | charge |
+| cha    | charm |
 | chai   | chai (tea) |
 | chan   | Jackie-chan |
 | chang  | change |
 | chao   | cheese chowder |
 | che    | Che Guevara |
-| chen   | change |
+| chen   | chunk |
 | cheng  | big chungus |
 | chi    | Tschechien |
 | chong  | Chongqing |
 | chou   | choke |
 | chu    | chew |
-| chua   |      |
-| chuai  |      |
+| chua   | tSchwarz |
+| chuai  | chuwilight (twilight) |
 | chuan  | Szechuan sauce |
-| chuang |      |
-| chui   |      |
+| chuang | chuwang (Zwang) |
+| chui   | chuway street (two way street) |
 | chun   |  |
 | chuo   |      |
 | ci     | Zitze |
@@ -66,8 +66,8 @@
 | cu     | Zucker, Zufall |
 | cuan   |      |
 | cui    | Zweifel (z-wey) |
-| cun    |  |
-| cuo    |      |
+| cun    | zu Ende |
+| cuo    | Zwölf |
 | da     | Dach |
 | dai    | to die |
 | dan    | danke |
@@ -86,7 +86,7 @@
 | dong   | donkey |
 | dou    | dough |
 | du     | duel |
-| duan   |      |
+| duan   | Durchgang |
 | dui    | Dwayne The Rock Johnson |
 | dun    | Dunst |
 | duo    | dwarf |
@@ -118,9 +118,9 @@
 | gua    | guano |
 | guai   | Paraguay (German) |
 | guan   | Guantanamo |
-| guang  |      |
+| guang  | Guangdong |
 | gui    | Sir Gawain (guway) |
-| gun    |      |
+| gun    | gwent |
 | guo    | Guo Island |
 | ha     | Haar |
 | hai    | Haifish |
@@ -137,30 +137,30 @@
 | hua    | Huawei |
 | huai   | hu-white |
 | huan   | Don Juan |
-| huang  |      |
+| huang  | vor Hunden Angst |
 | hui    | Hui people (Chinese Muslims) |
-| hun    |      |
-| huo    |      |
+| hun    | Huren UN |
+| huo    | who wants war |
 | ji     | jibberish |
 | jia    | Jamaika |
 | jian   | Jiyenna |
 | jiang  | junkie (ji-unkie) |
-| jiao   |      |
-| jie    |      |
+| jiao   | Jean-Paul Sartre |
+| jie    | jeans (ji-ens) |
 | jin    | jinn |
 | jing   | jingoist |
 | jiong  | Kim Jong-un |
 | jiu    | jiu-jitsu |
 | ju     | July |
-| juan   |      |
-| jue    |      |
+| juan   | juvenile |
+| jue    | Juedea (Judea) |
 | jun    | junk |
 | ka     | California |
 | kai    | Kaiser |
 | kan    | Kanake |
 | kang   | kangz and shit |
 | kao    | Kakao |
-| ke     |  |
+| ke     | Kelch |
 | kei    | okay |
 | ken    | Kennzeichen |
 | keng   | kung fu |
@@ -402,7 +402,7 @@
 | zheng  | Jungle (German) |
 | zhi    | Djihad (German) |
 | zhong  | jonglieren |
-| zhou   | GI Joe |
+| zhou   | average Joe |
 | zhu    | Jew |
 | zhua   |  |
 | zhuai  |      |
