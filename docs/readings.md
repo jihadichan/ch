@@ -68,7 +68,7 @@
 | cui    | Zweifel (z-wey) |
 | cun    | zu Ende |
 | cuo    | Zwölf |
-| da     | Dach |
+| da     | damage |
 | dai    | to die |
 | dan    | danke |
 | dang   | dangerous (Indian accent) |
@@ -81,7 +81,7 @@
 | dian   | Canadian |
 | diao | Diamantenstaub, Dickbauch                  |
 | die    | Studie |
-| ding   | building |
+| ding   | dicke Dinger |
 | diu    | due diligence |
 | dong   | donkey |
 | dou    | dough |
@@ -105,8 +105,8 @@
 | fu     | fuck you |
 | ga     | Gabel |
 | gai    | guy |
-| gan    | ganze Zeit |
-| gang   | gang () |
+| gan    | ganja |
+| gang   | gangster |
 | gao    | Gauner |
 | ge     | Gestank |
 | gei    | gay |
@@ -142,10 +142,10 @@
 | hun    | Huren UN |
 | huo    | who wants war |
 | ji     | jibberish |
-| jia    | Jamaika |
+| jia    | Jiamaika |
 | jian   | Jiyenna |
 | jiang  | junkie (ji-unkie) |
-| jiao   | Jean-Paul Sartre |
+| jiao   | Mr. Jiao |
 | jie    | jeans (ji-ens) |
 | jin    | jinn |
 | jing   | jingoist |
@@ -197,7 +197,7 @@
 | lü     | lügen |
 | luan   |      |
 | lüe    |      |
-| lun    |      |
+| lun    | lynching |
 | luo    | Luo River |
 | ma     | mommy |
 | mai    | Matsumoto Mai |
@@ -330,7 +330,7 @@
 | tan    | Tankstelle |
 | tang   | Tanga |
 | tao    | Tau Empire |
-| te     | Turing test |
+| te     | test |
 | tei    | tailor |
 | teng   | Blutung |
 | ti     | tea |
@@ -416,6 +416,6 @@
 | zou    | danger zone |
 | zu     | Zoom |
 | zuan   |      |
-| zui    | ze way |
+| zui    | Dzeyhänderschwert (Zweihänderschwert) |
 | zun    | zünden (dzunden) |
 | zuo    | zoologist |

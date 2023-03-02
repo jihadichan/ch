@@ -1,6 +1,7 @@
 import base64
 import hashlib
 import json
+import re
 from re import split
 
 from src.commands.uberhanzi.lookups.HanziFreqLookup import HanziFreqLookup
@@ -55,10 +56,14 @@ def loadHanziCharAsJsonString(hanziListChar: HanziListChar) -> str:
 
 def getPinyin(hanziChar: HanziChar, pinyinLookup: PinyinLookup) -> str:
     playback = []
+    used = []
     for pinyin in hanziChar.pyn:
         pyn = pinyinLookup.get(pinyin, hanziChar)
         if pyn:
-            playback.append(pyn.ascii)
+            normalized = re.sub("\\d", "", pyn.ascii)
+            if normalized not in used:
+                playback.append(pyn.ascii)
+                used.append(normalized)
     return ".".join(playback)
 
 
@@ -68,7 +73,7 @@ def createMnemonics(hanziListChar: HanziListChar, hanziChar: HanziChar):
     html = "<br>"
     html += f"{hanziListChar.hanzi} - <br>"
     html += f"{pyn} - <br>"
-    html += f"<br><br>"
+    html += f"<br>"
     html += f"---<br>"
 
     exm = hanziChar.exm[0]
