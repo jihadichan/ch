@@ -56,15 +56,15 @@
 | chua   | tSchwarz |
 | chuai  | chuwilight (twilight) |
 | chuan  | Szechuan sauce |
-| chuang | chuwang (Zwang) |
+| chuang | Mr Chuang |
 | chui   | chuway street (two way street) |
-| chun   |  |
-| chuo   |      |
+| chun   | chuckling Wendy |
+| chuo   | church war |
 | ci     | Zitze |
 | cong   | Zonk (German) |
 | cou    | Amazone |
 | cu     | Zucker, Zufall |
-| cuan   |      |
+| cuan  | zwanzig |
 | cui    | Zweifel (z-wey) |
 | cun    | zu Ende |
 | cuo    | Zwölf |
@@ -170,10 +170,10 @@
 | kua    | Quadrat, Qualität |
 | kuai   | quite |
 | kuan   | kwanzaa |
-| kuang  |      |
+| kuang  | die Kuh Angela |
 | kui    | earth quake |
 | kun    | Kunst |
-| kuo    |      |
+| kuo    | quota |
 | la     | lachen |
 | lai    | lie |
 | lan    | Land |
@@ -185,7 +185,7 @@
 | li     | Bruce Lee |
 | lia    | Liane |
 | lian   | Alien |
-| liang  |  |
+| liang  | (macht, hat) Bruce Lee Angst |
 | liao   | Liebeszauber |
 | lie    | Familie |
 | lin    | goblin |
@@ -195,8 +195,8 @@
 | lou    | low |
 | lu     | Luftschloss |
 | lü     | lügen |
-| luan   |      |
-| lüe    |      |
+| luan   | Luanda |
+| lüe    | Lübeck |
 | lun    | lynching |
 | luo    | Luo River |
 | ma     | mommy |
@@ -220,8 +220,8 @@
 | mu     | muh kuh, multiverse |
 | na     | Nacht |
 | nai    | night |
-| nan    | nano* (German) |
-| nang   |      |
+| nan    | Nanking |
+| nang   | Nanga Parbat |
 | nao    | nowadays |
 | ne     | dindu nuffin |
 | nei    | nay-sayer |
@@ -238,10 +238,10 @@
 | nong   | nong (Idiot) |
 | nou    | know |
 | nu     | nuclear |
-| nü     | nüchtern |
+| nü     | nympho |
 | nuan   | nuance |
-| nüe    |      |
-| nuo    |      |
+| nüe    | nüchtern |
+| nuo    | numero uno |
 | o      | opera |
 | ou     | oh my god |
 | pa     | pacifist |
@@ -264,21 +264,21 @@
 | qi     | chi |
 | qia    | chia seeds |
 | qian   | Tschetschenien |
-| qiang  |      |
+| qiang  | Chi Angriff |
 | qiao  | ciao (tschau) |
-| qie    |      |
+| qie    | Chile |
 | qin    | chin, chinchilla |
 | qing   | ching ching |
-| qiong  |      |
-| qiu    |      |
+| qiong  | chi strong |
+| qiu    | chill-out-room |
 | qu     | tschüss |
 | quan   | 4tschuwen |
-| que    |      |
-| qun    |      |
+| que    | Machu Picchu-e |
+| qun    | tschünden (zünden) |
 | ran    | random |
 | rang   | Rang (German) |
 | rao    | rowdy |
-| re     |      |
+| re     | rebel |
 | ren    | renegade |
 | reng   | Nahrung |
 | ri     | rich |
@@ -298,7 +298,7 @@
 | se     | servitude |
 | sen    | sensational |
 | seng   | *messung |
-| sha    |      |
+| sha    | Shah |
 | shai   | shy |
 | shan   | Schande |
 | shang  | Shanghai |
@@ -313,15 +313,15 @@
 | shua   | Klaus Schwab |
 | shuai  | schweigen |
 | shuan  | Schwanz |
-| shuang |      |
-| shui   |      |
+| shuang | schuwanger |
+| shui   | shway (sway) |
 | shun   | Schwund |
 | shuo   | shut off |
 | si     | Sith lord |
 | song   | song |
 | sou    | Thomas Sowell |
 | su     | to sue |
-| suan   |      |
+| suan   | swan |
 | sui    | expressway |
 | sun    | Sun Tzu |
 | suo    | SWAT team |
@@ -337,22 +337,22 @@
 | tian   | Tiananmen Square |
 | tiao   | tiefblau, tief traurig, tierhaut |
 | tie    | aktie |
-| ting   | eating, farting, hunting |
+| ting   | farting |
 | tong   | Tonga |
 | tou    | toe |
 | tu     | Tuberkulose |
 | tuan   | Marie Antoinette |
 | tui    | Mark Twain |
 | tun    | twin (twen) |
-| tuo    |      |
+| tuo    | tug of war, two-front war |
 | wa     | Wahnsinn |
 | wai    | Weimar Republic |
 | wan    | Obi Wan Kenobi |
-| wang   |      |
+| wang   | Wangen |
 | wei    | way |
 | wen    | Wendy's burger |
-| weng   |      |
-| wo     | war (English) |
+| weng   | Aufschwung, Abschwung |
+| wo | Wolf                                       |
 | wu     | Uhr |
 | xi     | sheep |
 | xia    | Shia |
@@ -362,9 +362,9 @@
 | xie    | schief |
 | xin    | shin, Shinto priest |
 | xing   | shingles |
-| xiong  |      |
-| xiu    |      |
-| xu     | Scüler |
+| xiong  | schilong |
+| xiu    | schiesswütig |
+| xu     | Schüler |
 | xuan   | schwenken, schwängern |
 | xue    | Schuweden |
 | xun    | Schund |
@@ -404,18 +404,18 @@
 | zhong  | jonglieren |
 | zhou   | average Joe |
 | zhu    | Jew |
-| zhua   |  |
-| zhuai  |      |
-| zhuan  |      |
-| zhuang |      |
-| zhui   |      |
-| zhun   |      |
+| zhua   | Jewish-American |
+| zhuai  | Jews in Weimar |
+| zhuan  | Jew Anarchist |
+| zhuang | Jew Angst |
+| zhui   | Jewish way |
+| zhun   | Jun the cuck |
 | zhuo   | Jewodo (Jewish judo) |
 | zi     | zipper |
 | zong   | Zongschreiber (German) |
 | zou    | danger zone |
 | zu     | Zoom |
-| zuan   |      |
+| zuan   | Zwang |
 | zui    | Dzeyhänderschwert (Zweihänderschwert) |
 | zun    | zünden (dzunden) |
 | zuo    | zoologist |
