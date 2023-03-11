@@ -49,7 +49,7 @@
 | che    | Che Guevara |
 | chen   | chunk |
 | cheng  | big chungus |
-| chi    | Tschechien |
+| chi    | cheap, cheat |
 | chong  | Chongqing |
 | chou   | choke |
 | chu    | chew |
@@ -110,7 +110,7 @@
 | gao    | Gauner |
 | ge     | Gestank |
 | gei    | gay |
-| gen    | Gentechnik |
+| gen    | Genetik |
 | geng   | Abneigung |
 | gong   | Falun Gong |
 | gou    | gold |
@@ -151,7 +151,7 @@
 | jing   | jingoist |
 | jiong  | Kim Jong-un |
 | jiu    | jiu-jitsu |
-| ju     | July |
+| ju     | judo |
 | juan   | juvenile |
 | jue    | Juedea (Judea) |
 | jun    | junk |
@@ -198,10 +198,10 @@
 | luan   | Luanda |
 | lüe    | Lübeck |
 | lun    | lynching |
-| luo    | Luo River |
+| luo    | law |
 | ma     | mommy |
 | mai    | Matsumoto Mai |
-| man    | Mannsweib |
+| man    | Mann, Mannsweib |
 | mang   | Manga (German) |
 | mao    | chairman Mao |
 | me     | Messer |
@@ -369,7 +369,7 @@
 | xue    | Schuweden |
 | xun    | Schund |
 | ya     | Jagd |
-| yan    | Japanese Yen |
+| yan    | Yennifer |
 | yang   | young |
 | yao    | Jauche |
 | ye     | oh yeah |
