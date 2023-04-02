@@ -57,6 +57,22 @@ data					 # base64 encoded JSON
 
 
 
+# Anki
+
+## On Ubuntu 22.04
+
+There are some problems with some thing called the Wayland protocol. You need some ENVs. Create a startup script.
+
+```bash
+#!/bin/bash
+
+export QT_QPA_PLATFORM=xcb
+export QTWEBENGINE_CHROMIUM_FLAGS="--no-sandbox"
+anki
+```
+
+
+
 # Transition
 
 ## How to start
@@ -76,5 +92,4 @@ data					 # base64 encoded JSON
 ## Yomichan Hanzi
 
 - Technically it should be possible to morph that KanjiDict into a Hanzi dict. 
-
 

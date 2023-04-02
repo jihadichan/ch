@@ -47,7 +47,7 @@
 | chang  | change |
 | chao   | cheese chowder |
 | che    | Che Guevara |
-| chen   | chunk |
+| chen   | Cenk Uygur |
 | cheng  | big chungus |
 | chi    | cheap, cheat |
 | chong  | Chongqing |
@@ -179,7 +179,7 @@
 | lan    | Land |
 | lang   | Langeweile |
 | lao    | laufen |
-| le     | Lüftung |
+| le     | lemming |
 | lei    | layman |
 | leng   | Lunge |
 | li     | Bruce Lee |
@@ -270,7 +270,7 @@
 | qin    | chin, chinchilla |
 | qing   | ching ching |
 | qiong  | chi strong |
-| qiu    | chill-out-room |
+| qiu    | choose |
 | qu     | tschüss |
 | quan   | 4tschuwen |
 | que    | Machu Picchu-e |
@@ -370,7 +370,7 @@
 | xun    | Schund |
 | ya     | Jagd |
 | yan    | Yennifer |
-| yang   | young |
+| yang   | Pyongyang |
 | yao    | Jauche |
 | ye     | oh yeah |
 | yi     | idiot |
@@ -410,11 +410,11 @@
 | zhuang | Jew Angst |
 | zhui   | Jewish way |
 | zhun   | Jun the cuck |
-| zhuo   | Jewodo (Jewish judo) |
+| zhuo   | Jewish duo |
 | zi     | zipper |
 | zong   | Zongschreiber (German) |
 | zou    | danger zone |
-| zu     | Zoom |
+| zu     | zoomer |
 | zuan   | Zwang |
 | zui    | Dzeyhänderschwert (Zweihänderschwert) |
 | zun    | zünden (dzunden) |
