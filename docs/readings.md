@@ -305,7 +305,7 @@
 | shao   | Schaufel |
 | she    | Schufterei |
 | shei   | shady |
-| shen   | schänden |
+| shen   | Schund |
 | sheng  | shunga |
 | shi    | shieet (like the German "sch" with an "E") |
 | shou   | show |

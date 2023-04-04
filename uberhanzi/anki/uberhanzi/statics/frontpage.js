@@ -551,7 +551,7 @@ function getRubyElements(section) {
 
 
 function getReadingsFromSection(section) {
-    var regex = /\((.{1,5}),/;
+    var regex = /\((.{1,7}),/;
 
     section = section.replace(/<br\/?>/g, "\n");
     section = cleanFromCommentedOutRubies(section);
