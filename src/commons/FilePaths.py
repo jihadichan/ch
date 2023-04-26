@@ -57,3 +57,10 @@ def readingsMarkdownFile() -> Path:
     if not path.exists():
         Utils.exitWithError(f"Failed to find readings.md at: {path.absolute()}")
     return path
+
+
+def oldMnemonics() -> Path:
+    path = Path("uberhanzi/resources/old_mnemonics.json")
+    if not path.exists():
+        Utils.exitWithError(f"Failed to find expected file at: {path.absolute()}")
+    return path

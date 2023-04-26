@@ -14,6 +14,8 @@ from src.utils import FileUtils, Utils
 
 def create(hanziFreqDict: HanziFreqLookup, pinyinLookup: PinyinLookup):
     lines = FileUtils.loadFileAsList(FilePaths.hanziList(), "Failed to load hanzi list")
+    oldMnemonics = json.loads(FileUtils.loadFileAsString(FilePaths.oldMnemonics(), "Failed to load old mnemonics"))
+
     characters = []
     for line in lines:
         characters.append(HanziListChar.fromHanziList(line))
@@ -28,14 +30,14 @@ def create(hanziFreqDict: HanziFreqLookup, pinyinLookup: PinyinLookup):
             continue
 
         row = [
-            getID(hanziListChar),                                # ID
-            hanziListChar.hanzi,                                 # hanzi
-            createConcept(hanziChar),                            # concept
-            createMnemonics(hanziListChar, hanziChar),           # mnemonic
-            getPinyin(hanziChar, pinyinLookup),                  # playback
-            str(hanziFreqDict.getFreq(hanziListChar.hanzi)),     # frequency
-            f"ｘ{hanziListChar.hanzi}",                          # search field
-            str(base64.b64encode(jsonString.encode()).decode())  # json data
+            getID(hanziListChar),                                       # ID
+            hanziListChar.hanzi,                                        # hanzi
+            createConcept(hanziChar),                                   # concept
+            createMnemonics(hanziListChar, hanziChar, oldMnemonics),    # mnemonic
+            getPinyin(hanziChar, pinyinLookup),                         # playback
+            str(hanziFreqDict.getFreq(hanziListChar.hanzi)),            # frequency
+            f"ｘ{hanziListChar.hanzi}",                                 # search field
+            str(base64.b64encode(jsonString.encode()).decode())         # json data
         ]
         rows += "\t".join(row)
         rows += "\n"
@@ -67,11 +69,17 @@ def getPinyin(hanziChar: HanziChar, pinyinLookup: PinyinLookup) -> str:
     return ".".join(playback)
 
 
-def createMnemonics(hanziListChar: HanziListChar, hanziChar: HanziChar):
+def createMnemonics(hanziListChar: HanziListChar, hanziChar: HanziChar, oldMnemonics: dict):
     pyn = hanziChar.pyn[0]
 
+    mnemonic = ""
+    if hanziChar.cur and hanziChar.cur in oldMnemonics:
+        mnemonic = oldMnemonics[hanziChar.cur]
+    elif hanziChar.trd and hanziChar.trd in oldMnemonics:
+        mnemonic = oldMnemonics[hanziChar.trd]
+
     html = "<br>"
-    html += f"{hanziListChar.hanzi} - <br>"
+    html += f"{hanziListChar.hanzi} - {mnemonic}<br>"
     html += f"{pyn} - <br>"
     html += f"<br>"
     html += f"---<br>"
