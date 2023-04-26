@@ -274,7 +274,7 @@
 | qu     | tschüss |
 | quan   | 4tschuwen |
 | que    | Machu Picchu-e |
-| qun    | tschünden (zünden) |
+| qun    | tschwin (twin) |
 | ran    | random |
 | rang   | Rang (German) |
 | rao    | rowdy |
