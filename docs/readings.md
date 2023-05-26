@@ -124,7 +124,7 @@
 | guo    | Guo Island |
 | ha     | Haar |
 | hai    | Haifish |
-| han    | Harnröhre |
+| han    | Han people |
 | hang   | Abhang |
 | hao    | howitzer |
 | he     | head |
@@ -172,7 +172,7 @@
 | kuan   | kwanzaa |
 | kuang  | die Kuh Angela |
 | kui    | earth quake |
-| kun    | Kunst |
+| kun    | tae kwon do |
 | kuo    | quota |
 | la     | lachen |
 | lai    | lie |
@@ -291,7 +291,7 @@
 | run    | run |
 | ruo    | raw |
 | sa     | Assad |
-| sai    | sigh |
+| sai    | Saitama |
 | san    | Santa-san |
 | sang   | unsung hero |
 | sao    | Sao Paulo |
@@ -323,7 +323,7 @@
 | su     | to sue |
 | suan   | swan |
 | sui    | expressway |
-| sun    | Sun Tzu |
+| sun    | viking Sven |
 | suo    | SWAT team |
 | ta     | Tag |
 | tai    | Thai boxer |
@@ -362,12 +362,12 @@
 | xie    | schief |
 | xin    | shin, Shinto priest |
 | xing   | shingles |
-| xiong  | schilong |
+| xiong  | Shillong waterfalls |
 | xiu    | schiesswütig |
 | xu     | Schüler |
 | xuan   | schwenken, schwängern |
 | xue    | Schuweden |
-| xun    | Schund |
+| xun    | schwinden |
 | ya     | Jagd |
 | yan    | Yennifer |
 | yang   | Pyongyang |
