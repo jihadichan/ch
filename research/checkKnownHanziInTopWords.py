@@ -1,7 +1,7 @@
 import json
 
 maxWords = 10000
-maxKnownHanzi = 1500
+maxKnownHanzi = 2000
 top10kWordsList = []
 knownHanziDict = set()
 unusedHanzi = set()
