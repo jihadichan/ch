@@ -343,7 +343,7 @@
 | tu     | Tuberkulose |
 | tuan   | Marie Antoinette |
 | tui    | Mark Twain |
-| tun    | twin (twen) |
+| tun    | twenty |
 | tuo    | tug of war, two-front war |
 | wa     | Wahnsinn |
 | wai    | Weimar Republic |
