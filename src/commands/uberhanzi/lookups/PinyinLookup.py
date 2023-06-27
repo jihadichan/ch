@@ -40,7 +40,7 @@ class PinyinLookup(BaseModel):
 
         return pinyinDict
 
-    def get(self, pinyin: str, hanziChar: HanziChar) -> Optional[Pinyin]:
+    def get(self, pinyin: str) -> Optional[Pinyin]:
         pinyin = pinyin.strip().lower()
         if len(self.pinyinDict) == 0:
             Utils.exitWithError("PinyinLookup is empty. Did you use create()?")

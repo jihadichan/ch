@@ -1,3 +1,5 @@
+import hashlib
+
 import click
 
 
@@ -14,3 +16,11 @@ def exitWithException(errorMessage: str, exception: Exception):
 
 def printInfo(message: str):
     click.secho(f"{message}", fg="yellow")
+
+
+def hashHanzi(hanziAsString: str, length: int = 3) -> str:
+    return hashlib.shake_256(hanziAsString.encode()).hexdigest(length)
+
+
+def hanziToUnicode(hanzi: str) -> str:
+    return hex(ord(hanzi))[2:]

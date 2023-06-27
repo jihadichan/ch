@@ -48,7 +48,7 @@ def create(hanziFreqDict: HanziFreqLookup, pinyinLookup: PinyinLookup):
 
 
 def getID(hanziListChar: HanziListChar) -> str:
-    return f"uhz-{hashlib.shake_256(hanziListChar.hanzi.encode()).hexdigest(3)}"
+    return f"uhz-{Utils.hashHanzi(hanziListChar.hanzi)}"
 
 
 def loadHanziCharAsJsonString(hanziListChar: HanziListChar) -> str:
@@ -60,7 +60,7 @@ def getPinyin(hanziChar: HanziChar, pinyinLookup: PinyinLookup) -> str:
     playback = []
     used = []
     for pinyin in hanziChar.pyn:
-        pyn = pinyinLookup.get(pinyin, hanziChar)
+        pyn = pinyinLookup.get(pinyin)
         if pyn:
             normalized = re.sub("\\d", "", pyn.ascii)
             if normalized not in used:

@@ -64,3 +64,17 @@ def oldMnemonics() -> Path:
     if not path.exists():
         Utils.exitWithError(f"Failed to find expected file at: {path.absolute()}")
     return path
+
+
+def confFile() -> Path:
+    path = Path("uberhanzi/resources/conf_list.txt")
+    if not path.exists():
+        Utils.exitWithError(f"Failed to find expected file at: {path.absolute()}")
+    return path
+
+
+def uberHanziCsv() -> Path:
+    path = Path("output/uberhanzi.csv")
+    if not path.exists():
+        Utils.exitWithError(f"Failed to find expected file at: {path.absolute()}")
+    return path

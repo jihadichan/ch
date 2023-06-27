@@ -362,7 +362,7 @@
 | xie    | schief |
 | xin    | shin, Shinto priest |
 | xing   | shingles |
-| xiong  | Shillong waterfalls |
+| xiong  | sching schang schong |
 | xiu    | schiesswütig |
 | xu     | Schüler |
 | xuan   | schwenken, schwängern |
