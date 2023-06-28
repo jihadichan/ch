@@ -42,11 +42,16 @@ def createConfDict(hanziDict: Dict[str, HanziData]) -> Dict[str, HanziConf]:
             hanzis = line.strip().split(" cf ")
             for hanzi in hanzis:
                 hanziData = hanziDict.get(Utils.hashHanzi(hanzi))
-                hanziConf = HanziConf(hz=hanzi,
-                                      meta=f"{hanzi} ({hanziData.pinyin}, {hanziData.concept})",
-                                      confs=hanzis,
-                                      mnemonic=hanziData.mnemonic)
-                confDict.update({Utils.hanziToUnicode(hanzi): hanziConf})
+                id = Utils.hanziToUnicode(hanzi)
+                conf = confDict.get(id)
+                if conf:
+                    conf.confs.update(hanzis)
+                else:
+                    hanziConf = HanziConf(hz=hanzi,
+                                          meta=f"{hanzi} ({hanziData.pinyin}, {hanziData.concept})",
+                                          confs=hanzis,
+                                          mnemonic=hanziData.mnemonic)
+                    confDict.update({id: hanziConf})
     return confDict
 
 
