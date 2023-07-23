@@ -452,3 +452,83 @@
 床 cf 宋
 默 cf 然
 欢 cf 吹
+宁 cf 厅
+奏 cf 泰
+唯 cf 瞧
+锁 cf 销
+额 cf 颇
+奉 cf 泰 cf 奏
+培 cf 倍
+盘 cf 血
+吴 cf 呈
+驾 cf 骂
+仔 cf 存
+箱 cf 籍
+柏 cf 相
+搞 cf 稿
+哭 cf 丧
+喜 cf 善 cf 曹
+离 cf 禽
+廷 cf 延
+勤 cf 勒
+惊 cf 凉
+犹 cf 狱
+冷 cf 怜
+奇 cf 寄
+杨 cf 汤
+盛 cf 盗
+凝 cf 疑
+庆 cf 厌
+去 cf 云 cf 丢
+埋 cf 理
+重 cf 董
+介 cf 个
+夜 cf 液
+吹 cf 叹
+戒 cf 裁
+荣 cf 亲
+似 cf 以 cf 拟
+港 cf 洪
+销 cf 锁
+遍 cf 偏
+泽 cf 译
+塞 cf 寒
+丝 cf 慈
+延 cf 廷
+戴 cf 截
+届 cf 后
+实 cf 买 cf 头 cf 卖
+吸 cf 级
+村 cf 树
+盾 cf 厚
+继 cf 断
+盾 cf 质
+弄 cf 异
+奈 cf 奔
+机 cf 朵
+朗 cf 明 cf 那
+占 cf 点
+禁 cf 标
+争 cf 事
+脑 cf 胸
+庆 cf 厌
+电 cf 奄
+繁 cf 紫
+吾 cf 语
+祝 cf 视
+吐 cf 叶
+赤 cf 亦
+陪 cf 部
+悟 cf 话
+雾 cf 零
+猫 cf 猎 cf 描
+筹 cf 寿
+沈 cf 没
+斯 cf 欺
+种 cf 仲
+池 cf 他
+亏 cf 夸 cf 与
+廷 cf 延
+离 cf 离
+残 cf 践
+曹 cf 豊
