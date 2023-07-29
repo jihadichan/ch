@@ -39,14 +39,23 @@ data					 # base64 encoded JSON
 
 # Resources
 
+
+
+## Misc
+
 - [Pinyin pronunciation](https://chinese.yabla.com/chinese-pinyin-chart.php), with mp3 files
+
 - [Pinyin transliteration](https://mandarintools.com/pychart.html), `jue4 => juè`
+
 - [Top10k hanzi](https://lingua.mtsu.edu/chinese-computing/statistics/char/list.php?Which=MO)
+
 - [Grammar guide](https://resources.allsetlearning.com/chinese/grammar/Grammar_points_by_level) (lots of examples but no sound)
 
+  
 
 
-# Decks
+
+## Decks
 
 - [Grammar deck](https://ankiweb.net/shared/info/782551504) (6k notes, needs probably restructuring, no audio) 
 - [Grammar deck](https://ankiweb.net/shared/info/797518833) (5k notes, has audio but uses Google Text-to-Speech, uses AllSet Learning grammar guide)
@@ -73,23 +82,51 @@ anki
 
 
 
-# Transition
+## Yomichan 
 
-## How to start
+- For dictionaries `resources/` (from [Yomichan setup for Chinese](https://gist.github.com/shoui520/25460fd2e9fb194d3e5152fa2ce42ca2)). Simple import.
 
-- Learn top3k hanzi
-- Get Yomichan to work with Chinese
-- Create Forvo mapper as local server
-- Work through the [grammar guide](https://resources.allsetlearning.com/chinese/grammar/Grammar_points_by_level) and mine your first words
-- Compliment with the [grammar deck](https://ankiweb.net/shared/info/797518833) maybe or go straight
+- For audio use the `chcli yomichan --run-server`. If it doesn't run then Yomichan inserts an empty field. Custom URL for audio source is:
+
+  ```
+  http://localhost:8888/get?word={term}&pinyin={reading}
+  ```
+
+- `TODO` Technically it should be possible to morph that KanjiDict into a Hanzi dict for character lookups
 
 
+
+## AnkiConnect Settings
+
+Settings to import from Yomichan pop-up to Anki. Settings > Anki > Configure Anki card format
+
+- Deck: UberSentences_Vocab_1
+
+- Model: UberSentences
+
+- Settings
+
+  ```
+  sentence: {furigana}
+  notes: {glossary}<br>Sentence:<br>{sentence}
+  source: {clipboard-image}<br>{document-title}<br>{url}
+  mp3: {audio}
+  data: {}
+  ```
+
+  
 
 ## UberVocab
 
-- [Yomichan setup for Chinese](https://gist.github.com/shoui520/25460fd2e9fb194d3e5152fa2ce42ca2) (needs Forvo mapper as local server)
+- Fields:
 
-## Yomichan Hanzi
+  ```
+  sentence
+  display
+  notes
+  sources
+  mp3
+  data
+  ```
 
-- Technically it should be possible to morph that KanjiDict into a Hanzi dict. 
-
+  

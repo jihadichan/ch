@@ -6,5 +6,6 @@ __pycache__
 *.egg-info
 
 # GENERATED
+mp3/
 output/*.csv
 output/*.js
