@@ -23,4 +23,3 @@ def create():
     outputFile = FilePaths.outputDir().joinpath('readings.js')
     FileUtils.writeToFile(outputFile, outputJson, f"Failed to write {outputFile}")
     Utils.printInfo(f"Wrote to {outputFile.absolute()}")
-

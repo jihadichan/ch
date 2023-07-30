@@ -3,8 +3,8 @@ import json
 import re
 from pathlib import Path
 
-from src.commands.uberhanzi.lookups.HanziFreqLookup import HanziFreqLookup
-from src.commands.uberhanzi.lookups.RadicalsLookup import RadicalsLookup
+from src.lookups.HanziFreqLookup import HanziFreqLookup
+from src.lookups.RadicalsLookup import RadicalsLookup
 from src.commons import FilePaths, YablaClient
 from src.models.HanziListChar import HanziListChar
 from src.utils import FileUtils, Utils

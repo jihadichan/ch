@@ -1,19 +1,13 @@
-import csv
 import json
 
 from pydantic import BaseModel
 from typing import Optional, Dict
 
-from src.commands.uberhanzi.lookups.PinyinLookup import PinyinLookup
+from src.lookups import HanziCsvDict
+from src.lookups.HanziCsvDict import HanziData
+from src.lookups.PinyinLookup import PinyinLookup
 from src.commons import FilePaths
 from src.utils import Utils, FileUtils
-
-
-class HanziData(BaseModel):
-    hanzi: str
-    concept: Optional[str] = None
-    mnemonic: Optional[str] = None
-    pinyin: Optional[str] = None
 
 
 class HanziConf(BaseModel):
@@ -25,7 +19,7 @@ class HanziConf(BaseModel):
 
 def create():
     pinyinLookup = PinyinLookup.create()
-    hanziDict = createHanziDict(pinyinLookup)
+    hanziDict = HanziCsvDict.create(pinyinLookup)
     confDict = createConfDict(hanziDict)
     dict_of_dicts = {key: {**conf.dict(), 'confs': list(conf.confs)} for key, conf in confDict.items()}
 
@@ -42,8 +36,8 @@ def createConfDict(hanziDict: Dict[str, HanziData]) -> Dict[str, HanziConf]:
             hanzis = line.strip().split(" cf ")
             for hanzi in hanzis:
                 hanziData = hanziDict.get(Utils.hashHanzi(hanzi))
-                id = Utils.hanziToUnicode(hanzi)
-                conf = confDict.get(id)
+                unicodeId = Utils.hanziToUnicode(hanzi)
+                conf = confDict.get(unicodeId)
                 if conf:
                     conf.confs.update(hanzis)
                 else:
@@ -51,37 +45,5 @@ def createConfDict(hanziDict: Dict[str, HanziData]) -> Dict[str, HanziConf]:
                                           meta=f"{hanzi} ({hanziData.pinyin}, {hanziData.concept})",
                                           confs=hanzis,
                                           mnemonic=hanziData.mnemonic)
-                    confDict.update({id: hanziConf})
+                    confDict.update({unicodeId: hanziConf})
     return confDict
-
-
-def createHanziDict(pinyinLookup: PinyinLookup) -> Dict[str, HanziData]:
-    hanziDict = {}
-
-    with open(f"{FilePaths.uberHanziCsv()}", 'r') as file:
-        reader = csv.reader(file, delimiter='\t')
-
-        for row in reader:
-            hanzi = row[1].strip()
-
-            concept = row[2].split('<br>')[0].strip()
-
-            mnemonic = ' '.join(row[3].split('<br><br>')[:-1]).strip()
-            mnemonic = mnemonic.replace("<br>", "", 1)
-
-            pinyin = convertAsciiPinyinToHanyu(row[4], pinyinLookup)
-
-            data = HanziData(hanzi=hanzi, concept=concept, mnemonic=mnemonic, pinyin=pinyin)
-            hanziDict.update({Utils.hashHanzi(hanzi): data})
-
-    return hanziDict
-
-
-def convertAsciiPinyinToHanyu(readings: str, pinyinLookup: PinyinLookup):
-    hanyu = []
-    for reading in readings.split("."):
-        try:
-            hanyu.append(pinyinLookup.get(reading).hanyu)
-        except (Exception,):
-            hanyu.append(reading)
-    return '.'.join(hanyu)

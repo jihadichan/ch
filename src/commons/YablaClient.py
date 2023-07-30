@@ -6,8 +6,8 @@ import requests
 from bs4 import BeautifulSoup
 from pydantic import BaseModel
 
-from src.commands.uberhanzi.lookups.HanziFreqLookup import HanziFreqLookup
-from src.commands.uberhanzi.lookups.RadicalsLookup import RadicalsLookup
+from src.lookups.HanziFreqLookup import HanziFreqLookup
+from src.lookups.RadicalsLookup import RadicalsLookup
 from src.models.HanziChar import HanziChar, ExampleWord
 from src.models.HanziListChar import HanziListChar
 from src.utils import Utils

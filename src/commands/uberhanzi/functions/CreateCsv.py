@@ -1,11 +1,10 @@
 import base64
-import hashlib
 import json
 import re
 from re import split
 
-from src.commands.uberhanzi.lookups.HanziFreqLookup import HanziFreqLookup
-from src.commands.uberhanzi.lookups.PinyinLookup import PinyinLookup
+from src.lookups.HanziFreqLookup import HanziFreqLookup
+from src.lookups.PinyinLookup import PinyinLookup
 from src.commons import FilePaths
 from src.models.HanziChar import HanziChar
 from src.models.HanziListChar import HanziListChar

@@ -2,9 +2,9 @@ import click
 from click import command
 
 from src.commands.uberhanzi.functions import ScrapeHanzi, ScrapeMp3, CreateCsv, CreateReadings, CreateConfs
-from src.commands.uberhanzi.lookups.HanziFreqLookup import HanziFreqLookup
-from src.commands.uberhanzi.lookups.PinyinLookup import PinyinLookup
-from src.commands.uberhanzi.lookups.RadicalsLookup import RadicalsLookup
+from src.lookups.HanziFreqLookup import HanziFreqLookup
+from src.lookups.PinyinLookup import PinyinLookup
+from src.lookups.RadicalsLookup import RadicalsLookup
 from src.utils import Utils
 
 

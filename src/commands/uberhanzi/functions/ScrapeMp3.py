@@ -4,7 +4,7 @@ from pathlib import Path
 
 import requests
 
-from src.commands.uberhanzi.lookups.PinyinLookup import PinyinLookup, PinyinType
+from src.lookups.PinyinLookup import PinyinLookup, PinyinType
 from src.commons import FilePaths
 from src.utils import Utils
 
