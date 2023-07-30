@@ -1,5 +1,29 @@
 {:toc}
 
+# Usage
+
+
+
+## Generate hanzi helpers
+
+Just run `make all`. For single commands see file.
+
+- `hanzi_dict.zip` needs to imported as dictionary into Yomichan
+- `mnemonics.js` belongs to the UberSentences deck
+- `confs.js` belongs to the UberHanzi deck
+
+
+
+## YomiChan custom audio URL server
+
+Use `make server`. On Windows you probably needs to run the command directly:
+
+```bash
+python3 chcli.py yomichan --run-server
+```
+
+
+
 # UberHanzi
 
 
