@@ -1,3 +1,4 @@
+import re
 
 sentencesList = []
 knownHanziDict = set()
@@ -17,7 +18,7 @@ with open('files/allset_sentences.txt', 'r') as file:
 
 
 for sentence in sentencesList:
-    for char in sentence:
+    for char in re.sub(r'[^\u4e00-\u9fff]', '', sentence):
         usedHanziSet.add(char)
         if char in knownHanziDict:
             knownHanziSet.add(char)
