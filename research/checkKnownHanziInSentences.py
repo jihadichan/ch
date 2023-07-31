@@ -31,5 +31,5 @@ print(f"Total sentences : {totalSentences}")
 print(f"Total hanzi     : {len(usedHanziSet)}")
 print(f"Known hanzi     : {len(knownHanziSet)}")
 print(f"Unknown hanzi   : {len(unknownHanziSet)}")
-for hanzi in unknownHanziSet:
-    print(hanzi)
+
+print(f" OR hanzi:".join(unknownHanziSet))
