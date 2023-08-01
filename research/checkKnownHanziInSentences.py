@@ -31,5 +31,5 @@ print(f"Total sentences : {totalSentences}")
 print(f"Total hanzi     : {len(usedHanziSet)}")
 print(f"Known hanzi     : {len(knownHanziSet)}")
 print(f"Unknown hanzi   : {len(unknownHanziSet)}")
-
+# todo check for untracked hanzi via loading the hanzi deck into a lookup
 print(f" OR hanzi:".join(unknownHanziSet))
