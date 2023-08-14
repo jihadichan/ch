@@ -41,9 +41,12 @@ def createConfDict(hanziDict: Dict[str, HanziData]) -> Dict[str, HanziConf]:
                 if conf:
                     conf.confs.update(hanzis)
                 else:
-                    hanziConf = HanziConf(hz=hanzi,
-                                          meta=f"{hanzi} ({hanziData.pinyin}, {hanziData.concept})",
-                                          confs=hanzis,
-                                          mnemonic=hanziData.mnemonic)
-                    confDict.update({unicodeId: hanziConf})
+                    try:
+                        hanziConf = HanziConf(hz=hanzi,
+                                              meta=f"{hanzi} ({hanziData.pinyin}, {hanziData.concept})",
+                                              confs=hanzis,
+                                              mnemonic=hanziData.mnemonic)
+                        confDict.update({unicodeId: hanziConf})
+                    except Exception as e:
+                        Utils.exitWithError(f"Can't find {hanzi} in known hanzi")
     return confDict
