@@ -74,10 +74,11 @@ def synthesizeMp3File(word, pinyin, mp3Path):
     # speech_synthesizer = speechsdk.SpeechSynthesizer(speech_config=speech_config)  # FOR DEBUG, will play the audio additionally
     speech_synthesizer = speechsdk.SpeechSynthesizer(speech_config=speech_config, audio_config=audio_output_config)
 
-    if pinyin:
-        result = speech_synthesizer.speak_text_async(pinyin).get()
-    else:
-        result = speech_synthesizer.speak_text_async(word).get()
+    # Bad, the Yomichan dict has no tones on some words which screw the reading up
+    # if pinyin:
+    #     result = speech_synthesizer.speak_text_async(pinyin).get()
+    # else:
+    result = speech_synthesizer.speak_text_async(word).get()
 
     if result.reason == speechsdk.ResultReason.SynthesizingAudioCompleted:
         with open(str(mp3Path), "wb") as audio:
