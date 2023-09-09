@@ -90,6 +90,18 @@ data					 # base64 encoded JSON
 
 
 
+## Kindle Books
+
+- Follow [this guide](https://www.cloudwards.net/remove-drm-from-kindle-books/) to install Calibre with DeDRM & KFXInput plugins.
+- You might also need `pip install pycrypto` (see comments)
+- Download the book from Amazon. Go to "Your Content and Devices", select the book, and then choose "Download & transfer via USB". You need `azw3` file. Importing the `kfx` file did not work. DRM wasn't removed.
+- You probably need to convert to TXT instead of PDF, if Yomichan can't read the HTML.
+  - If PDF, then convert via [CloudConvert](https://cloudconvert.com/pdf-to-html)
+  - If TXT, then just drag into the browser
+- Yomichan must have "Allow access to file URLs" enabled in the Chrome extension settings.
+
+
+
 # Anki
 
 ## On Ubuntu 22.04
