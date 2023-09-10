@@ -219,7 +219,7 @@
 | mou    | barkeeper Moe                              |
 | mu     | muh kuh, multiverse                        |
 | na     | Nacht                                      |
-| nai    | night                                      |
+| nai    | knight                                     |
 | nan    | Nanking                                    |
 | nang   | Nanga Parbat                               |
 | nao    | nowadays                                   |
