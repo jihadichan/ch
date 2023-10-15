@@ -10,6 +10,3 @@ azureApiKey
 # GENERATED
 mp3/
 output/*.csv
-output/*.js
-output/*.json
-output/*.zip
