@@ -1,0 +1,5 @@
+#!/bin/bash
+
+export SSL_CERT_DIR=/etc/ssl/certs
+
+cd /root/ch && python3 chcli.py yomichan --run-server >> /var/log/yomichan.log 2>&1

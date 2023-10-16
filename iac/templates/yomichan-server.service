@@ -1,0 +1,14 @@
+[Unit]
+Description=Yomichan Server
+After=network.target
+
+[Service]
+User=root
+Group=root
+Type=simple
+Restart=always
+RestartSec=2
+ExecStart=/usr/local/bin/yomichan-server
+
+[Install]
+WantedBy=multi-user.target

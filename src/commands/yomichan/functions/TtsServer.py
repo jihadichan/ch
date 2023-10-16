@@ -137,6 +137,6 @@ def generateYomiChanJson(word: str, pinyin) -> dict:
         "type": "audioSourceList",
         "audioSources": [{
             "name": word,
-            "url": f"http://localhost:8888/{str(path)}"
+            "url": f"http://128.140.64.215:8888/{str(path)}"
         }]
     }
