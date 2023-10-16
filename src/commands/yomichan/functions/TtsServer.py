@@ -93,7 +93,6 @@ def synthesizeMp3File(word, pinyin, mp3Path):
         if cancellation_details.reason == speechsdk.CancellationReason.Error:
             if cancellation_details.error_details:
                 print("Error details: {}".format(cancellation_details.error_details))
-        exit(1)
 
 
 def voiceDemo():
