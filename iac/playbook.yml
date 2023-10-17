@@ -64,3 +64,39 @@
         daemon_reload: yes
         enabled: yes
         state: restarted
+
+
+    # ---------------------------------------------------------------
+    # NGINX
+    # ---------------------------------------------------------------
+    - name: Install Nginx
+      apt:
+        name: nginx
+        state: present
+
+    - name: Ensure SSL directory exists
+      file:
+        path: /etc/nginx/ssl
+        state: directory
+        mode: '0755'
+
+    - name: Generate a Self-Signed SSL Certificate
+      command: openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/nginx/ssl/nginx.key -out /etc/nginx/ssl/nginx.crt -subj "/CN=localhost"
+      args:
+        creates: /etc/nginx/ssl/nginx.crt
+
+    - name: Remove default Nginx configuration
+      file:
+        path: /etc/nginx/sites-enabled/default
+        state: absent
+
+    - name: Add Nginx reverse proxy configuration
+      template:
+        src: templates/yomichan_nginx.conf
+        dest: /etc/nginx/sites-enabled/yomichan_nginx.conf
+
+    - name: Ensure Nginx is running and enabled
+      service:
+        name: nginx
+        state: restarted
+        enabled: yes

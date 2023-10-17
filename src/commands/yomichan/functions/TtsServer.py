@@ -55,10 +55,10 @@ class RootHandler(BaseHTTPRequestHandler):
 
 
 def runServer():
-    port = 8888
+    port = 8080
     server_address = ('', port)
     httpd = HTTPServer(server_address, RootHandler)
-    print(f'Starting httpd on http://localhost:{port}\nUse like this:\nhttp://localhost:8888/get?word=%E9%80%9A%E8%B4%A7%E8%86%A8%E8%83%80&pinyin=t%C5%8Dng%20hu%C3%B2%20p%C3%A9ng%20zh%C3%A0ng')
+    print(f'Starting httpd on http://localhost:{port}\nUse like this:\nhttp://localhost:8080/get?word=%E9%80%9A%E8%B4%A7%E8%86%A8%E8%83%80&pinyin=t%C5%8Dng%20hu%C3%B2%20p%C3%A9ng%20zh%C3%A0ng')
     httpd.serve_forever()
 
 
@@ -137,6 +137,6 @@ def generateYomiChanJson(word: str, pinyin) -> dict:
         "type": "audioSourceList",
         "audioSources": [{
             "name": word,
-            "url": f"http://128.140.64.215:8888/{str(path)}"
+            "url": f"http://128.140.64.215:8080/{str(path)}"
         }]
     }
