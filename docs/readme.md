@@ -10,6 +10,8 @@ Just run `make all`. For single commands see file.
 
 - `hanzi_dict.zip` needs to imported as dictionary into Yomichan
 - `mnemonics.js` belongs to the UberSentences deck
+  - You need to export the UberHanzi deck to `output/uberhanzi.txt`
+
 - `confs.js` belongs to the UberHanzi deck
 
 
