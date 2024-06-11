@@ -124,15 +124,11 @@ anki
 
 - For dictionaries `resources/` (from [Yomichan setup for Chinese](https://gist.github.com/shoui520/25460fd2e9fb194d3e5152fa2ce42ca2)). Simple import.
 
-- For audio use the `chcli yomichan --run-server`. If it doesn't run then Yomichan inserts an empty field. Custom URL for audio source is:
+- See `resources/` for export of settings
 
-  ```
-  http://localhost:8888/get?word={term}&pinyin={reading}
-  ```
+- Connect to proxy via `root:ss`
 
-- `TODO` Technically it should be possible to morph that KanjiDict into a Hanzi dict for character lookups
-
-
+  
 
 ## AnkiConnect Settings
 

@@ -2,6 +2,8 @@
 - hosts: all
 
   tasks:
+    - fail:
+        msg: "Old setup with self-signed certs. Fix first. Without domain you get a lot of problems."
 
     - name: Ensure azure_key is set
       when: azure_key is undefined or azure_key == ''
