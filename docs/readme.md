@@ -24,6 +24,8 @@ Use `make server`. On Windows you probably needs to run the command directly:
 python3 chcli.py yomichan --run-server
 ```
 
+You probably need to use a domain with HTTPS. Otherwise, the requests might fail. 
+
 
 
 # UberHanzi
@@ -120,13 +122,15 @@ anki
 
 
 
-## Yomichan 
+## Yomichan / Yomitan
 
 - For dictionaries `resources/` (from [Yomichan setup for Chinese](https://gist.github.com/shoui520/25460fd2e9fb194d3e5152fa2ce42ca2)). Simple import.
 
 - See `resources/` for export of settings
 
 - Connect to proxy via `root:ss`
+
+- Copy-to-clipboard for images seem to require to `Enable background clipboard text monitoring` (see Options > Clipboard). Otherwise Yomitan can't access the clipboard (at least in Brave)
 
   
 
