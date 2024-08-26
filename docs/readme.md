@@ -124,7 +124,9 @@ anki
 
 ## Yomichan / Yomitan
 
-- For dictionaries `resources/` (from [Yomichan setup for Chinese](https://gist.github.com/shoui520/25460fd2e9fb194d3e5152fa2ce42ca2)). Simple import.
+- ~~For dictionaries `resources/` (from [Yomichan setup for Chinese](https://gist.github.com/shoui520/25460fd2e9fb194d3e5152fa2ce42ca2)). Simple import.~~
+
+  - BETTER: Use the new [Yomitan dicts](https://github.com/MarvNC/yomitan-dictionaries) (Wenlin & CEDICT)
 
 - See `resources/` for export of settings
 
@@ -136,22 +138,25 @@ anki
 
 ## AnkiConnect Settings
 
-Settings to import from Yomichan pop-up to Anki. Settings > Anki > Configure Anki card format
+You need to configure how AnkiConnect exports data from the webpage into Anki by configuring the "Anki card format" in Yomitan. Settings > Anki > Configure Anki card format
+
+This is only needed if you make changes to the card format in Yomitan. Just import the Yomitan settings as JSON and it should be fine.
 
 - Deck: UberSentences_Vocab_1
 
 - Model: UberSentences
 
-- Settings
+- Fields & values (this depends on the configured card format which you need to configure in Anki, via Tools > Manage Note Types > Fields)
 
   ```
   sentence: {furigana}
+  display: {furigana}<br><br>{sentence}
   notes: {glossary}<br>Sentence:<br>{sentence}
   source: {clipboard-image}<br>{document-title}<br>{url}
   mp3: {audio}
   data: {}
   ```
-
+  
   
 
 ## UberVocab
