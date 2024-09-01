@@ -586,8 +586,11 @@ function getReadingsFromPlaySoundInSection(playSoundReadings, sectionReadings) {
             if (toAsciiPinyin(playSoundReading) === toAsciiPinyin(sectionReading)) {
                 compoundReading.push(toAsciiPinyin(playSoundReading));
             }
+            console.log("playSoundReadings", playSoundReading);
+            console.log("sectionReadings", sectionReading);
         });
     });
+
 
     return compoundReading;
 }
