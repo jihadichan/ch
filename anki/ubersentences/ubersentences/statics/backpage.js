@@ -1,7 +1,7 @@
 var data;
 var MODE = "NOT_SET";
 var MODE_UBERSENTENCES = "MODE_UBERSENTENCES"; // Anki Card is compiled with analysis table
-var MODE_YOMICHAN = "MODE_YOMICHAN"; // Card is inserted by Yomichan and there contains no analysis
+var MODE_YOMICHAN = "MODE_YOMICHAN"; // Card is inserted by Yomichan and contains no analysis
 try {
     data = JSON.parse(decodeURIComponent($('#data').html()));
     if (Object.keys(data).length === 0) {
@@ -96,7 +96,6 @@ function renderAnalysisTable(shouldHighLight) {
 function renderMnemonics() {
     var sentence = getRawOrDisplayField();
     var regex = /[\u4e00-\u9faf]|[\u3400-\u4dbf]/;
-    console.log("matching...")
 
     var match;
     var mnemonics = []
@@ -115,6 +114,7 @@ function renderMnemonics() {
         }
         sentence = sentence.replace(regex, "");
     }
+
     $('#rendered-content').html(getConfusionHtml(mnemonics));
 }
 
@@ -180,6 +180,12 @@ function renderNotes() {
     renderNoteLists(jQuerySelection);
     renderNoteMarkers(jQuerySelection);
     renderEnlargedHanzi(jQuerySelection);
+    renderWordHighlights(jQuerySelection);
+}
+
+function renderWordHighlights(jQuerySelection) {
+    var html = jQuerySelection.html();
+    jQuerySelection.html(addHighlight(html));
 }
 
 function renderEnlargedHanzi(jQuerySelection) {
@@ -338,7 +344,7 @@ function renderSentence(shouldHighlight) {
             }
         });
     } else {
-        sentence = getRawOrDisplayField();
+        sentence = addHighlight(getRawOrDisplayField());
     }
 
     $('#sentence').html(sentence);
@@ -929,6 +935,12 @@ function copyTextAreaToClipboard(id) {
     $temp.val(textArea.val()).select();
     document.execCommand("copy");
     $temp.remove();
+}
+
+function addHighlight(html) {
+    let wordToHighlight = document.getElementById('sentence-raw').querySelector('ruby').childNodes[0].textContent.trim();
+    const highlightedWord = `<span style="background-color: #fff3d4;">${wordToHighlight}</span>`;
+    return html.replace(new RegExp(wordToHighlight, 'g'), highlightedWord);
 }
 
 /*********************************************************************************/

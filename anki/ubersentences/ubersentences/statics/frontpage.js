@@ -38,12 +38,12 @@ function startTimeoutMarker() {
 
 function renderSentence() {
     var html = getRawOrDisplayField();
-    originalSentenceField = html;
+    originalSentenceField = addHighlight(html);
 
     var split = html.split(/<br\s?\/?><br\s?\/?>/);
     if (split.length === 2) {
-        // Has <br><br>, so show focus
-        html = "<div class='focus'>FOCUS</div>" + split[0];
+        // Has <br><br>, so show ...
+        html = "<div class='focus'>...</div>" + split[0];
     } else if (split.length === 1) {
         // Has NO <br><br>, so show full sentence
         if(isDisplayFieldEmpty) {
@@ -56,6 +56,12 @@ function renderSentence() {
     }
 
     document.getElementById("sentence-container").innerHTML = html;
+}
+
+function addHighlight(html) {
+    let wordToHighlight = document.getElementById('sentence-raw').querySelector('ruby').childNodes[0].textContent.trim();
+    const highlightedWord = `<span style="background-color: #fff3d4;">${wordToHighlight}</span>`;
+    return html.replace(new RegExp(wordToHighlight, 'g'), highlightedWord);
 }
 
 function getRawOrDisplayField() {
@@ -78,3 +84,4 @@ function addClickEvents() {
 startTimeoutMarker();
 addClickEvents();
 renderSentence();
+showOriginalSentenceField(); // We show the display field by default
