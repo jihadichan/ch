@@ -21,12 +21,17 @@ def create():
     pinyinLookup = PinyinLookup.create()
     hanziDict = HanziCsvDict.create(pinyinLookup)
     confDict = createConfDict(hanziDict)
+
     dict_of_dicts = {key: {**conf.dict(), 'confs': list(conf.confs)} for key, conf in confDict.items()}
 
-    outputJson = f"var confMap = {json.dumps(dict_of_dicts, ensure_ascii=False)}"
-    outputFile = FilePaths.outputDir().joinpath('confs.js')
-    FileUtils.writeToFile(outputFile, outputJson, f"Failed to write {outputFile}")
-    Utils.printInfo(f"Wrote to {outputFile.absolute()}")
+    chunk_size = 2000
+    chunks = [dict(list(dict_of_dicts.items())[i:i + chunk_size]) for i in range(0, len(dict_of_dicts), chunk_size)]
+
+    for index, chunk in enumerate(chunks):
+        outputJson = f"var confMap{index + 1} = {json.dumps(chunk, ensure_ascii=False)}"
+        outputFile = FilePaths.outputDir().joinpath(f'confs{index + 1}.js')
+        FileUtils.writeToFile(outputFile, outputJson, f"Failed to write {outputFile}")
+        Utils.printInfo(f"Wrote to {outputFile.absolute()}")
 
 
 def createConfDict(hanziDict: Dict[str, HanziData]) -> Dict[str, HanziConf]:

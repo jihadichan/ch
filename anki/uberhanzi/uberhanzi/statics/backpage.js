@@ -354,7 +354,10 @@ function addConfMarker(html) {
     if (confusions.length > 0) {
         html += "<div style='margin-top: 5px'><span class='confusion'>Confusions: </span>";
         for (var kanji of confusions) {
-            var conf = confMap[kanji.trim().codePointAt(0).toString(16)];
+            var conf = confMap1[kanji.trim().codePointAt(0).toString(16)];
+            if (conf === undefined) {
+                conf = confMap2[kanji.trim().codePointAt(0).toString(16)];
+            }
             html += "<br>" + conf.meta;
         }
         html += "<br></div>"
@@ -366,8 +369,11 @@ function addConfMarker(html) {
 function extractConfusions() {
     try {
         var kanji = hanziField.text().trim().codePointAt(0).toString(16); // as unicode
-        if (confMap[kanji]) {
-            return confMap[kanji].confs;
+        if (confMap1[kanji]) {
+            return confMap1[kanji].confs;
+        }
+        if (confMap2[kanji]) {
+            return confMap2[kanji].confs;
         }
     } catch (e) {
         debugField.append(e);

@@ -26,7 +26,6 @@ var currentRtId = 1000;
 var lastRtId = 999;
 var confusions = [];
 
-
 function debug(stage) {
     console.log(stage + " DEBUG", {
         sectionsLength: sections.length,
@@ -361,8 +360,12 @@ function renderConfusions() {
 function extractConfusions() {
     try {
         var kanji = hanziField.text().trim().codePointAt(0).toString(16); // as unicode
-        if (confMap[kanji]) {
-            confusions = confMap[kanji].confs;
+        if (confMap1[kanji]) {
+            confusions = confMap1[kanji].confs;
+            return;
+        }
+        if (confMap2[kanji]) {
+            confusions = confMap2[kanji].confs;
             return;
         }
     } catch (e) {
@@ -381,7 +384,10 @@ function getConfusionHtml() {
     var html = "<div class='confusion-solution'>";
     html += "<table>";
     for (var kanji of confusions) {
-        var kanjiData = confMap[kanji.trim().codePointAt(0).toString(16)];
+        var kanjiData = confMap1[kanji.trim().codePointAt(0).toString(16)];
+        if (kanjiData === undefined) {
+            kanjiData = confMap2[kanji.trim().codePointAt(0).toString(16)];
+        }
         html += "" +
             "<tr>" +
             "   <th>" +
@@ -407,7 +413,10 @@ function getConfusionHtmlShort() {
     var html = "<div class='confusion-solution'>";
     for (var kanji of confusions) {
         var kanjiAsUnicode = kanji.trim().codePointAt(0).toString(16)
-        var kanjiData = confMap[kanjiAsUnicode];
+        var kanjiData = confMap1[kanjiAsUnicode];
+        if (kanjiData === undefined) {
+            kanjiData = confMap2[kanjiAsUnicode];
+        }
         if (kanji !== hanziField.text()) {
             html += kanjiData.meta + "<br>";
         }
