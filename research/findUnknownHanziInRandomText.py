@@ -4,7 +4,7 @@ import unicodedata
 
 """
 This script will find unknown hanzi in some random text.
-- Export your known hanzi via Anki's Browse function (search for `-is:suspended`) into `SelectNotes.txt`
+- Export your known hanzi via Anki's Browse function (search for `(deck:UberHanzi OR deck:UberHanziLoop) -is:suspended`) into `SelectNotes.txt`
 - Put some random text into `input.txt` (can be anything, only hanzi will be checked)
 - See main() for file paths
 
