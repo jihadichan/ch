@@ -7,7 +7,7 @@ This script will find unknown hanzi in some random text.
 - Export your known hanzi via Anki's Browse function (search for `(deck:UberHanzi OR deck:UberHanziLoop) -is:suspended`) into `SelectNotes.txt`
 - Put some random text into `input.txt` (can be anything, only hanzi will be checked)
 - See main() for file paths
-
+- Then use some regex magic to look all hanzi up at once: `hanzi:丫 OR hanzi:仆 OR hanzi:侧 ...`
 """
 
 
